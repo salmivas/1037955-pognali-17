@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Погнали, каталог</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="http://placehold.it/150x100" alt="Погнали?" class="page-header__logo-image" width="TODO:" height="TODO:">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="site-list main-nav__list">
+            <li class="site-list__item">
+              <a>О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Направления</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="form.html">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="user-list main-nav__list">
+            <li class="user-list__item">
+              <a href="login.html" class="oval-button user-list__login">Авторизация</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="contacts page-header__contacts">
+        <p class="contacts__item--blue"><a class="contacts__phone">8 800 555-86-28</a></p>
+        <p class="contacts__item--blue"><a class="contacts__email">mail@htmlacademy.ru</a></p>
+      </div>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--header">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--header">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--header">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main class="catalog-main">
+      <section class="countries-filter">
+        <h2 class="countries-filter__headline">Фильтрация по странам</h2>
+      </section>
+      <div class="catalog-main__wrapper">
+        <section class="fellow-travellers-filter">
+          <form class="fellow-travellers-filter__form" method="post" action="https://echo.htmlacademy.ru">
+          </form>
+        </section>
+        <section class="fellow-travellers fellow-travellers__catalog">
+          <h2 class="block-headline fellow-travellers__block-headline visually-hidden">Попутчики</h2>
+          <ul class="catalog-cards">
+            <li class="catalog-cards__item">
+              <div class="catalog-cards__wripper--before">
+                <a href="#" class="catalog-cards__image-link">
+                  <img class="catalog-cards__image" src="http://placehold.it/150x100" alt="Таня Фирсова" width="TODO:" height="TODO:">
+                </a>
+                <a class="user-name catalog-cards__user-name" href="#">Таня Фирсова</a>
+                <div class="status-mark status-mark--offline catalog-cards__status-mark"></div>
+                <div class="likes">
+                  <a class="like-button likes__like-button likes__like-button--active"></a>
+                  <span class="likes__count">1,5 m</span>
+                </div>
+                <ul class="tag-list catalog-cards__tag-list">
+                  <li class="tag-list__tag">#ЗОЖ</li>
+                  <li class="tag-list__tag">#ПП</li>
+                  <li class="tag-list__tag">#Фитнес</li>
+                  <li class="tag-list__tag">#пляж</li>
+                  <li class="tag-list__tag">#авокадо</li>
+                  <li class="tag-list__tag">#смузи</li>
+                </ul>
+              </div>
+              <h3 class="catalog-cards__item-headline">хочет посетить:</h3>
+              <ul class="country-list catalog-cards__country-list">
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>Шри-Ланка</p>
+                </li>
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>Тайланд</p>
+                </li>
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>Сейшелы</p>
+                </li>
+              </ul>
+              <h3 class="catalog-cards__item-headline">транспорт:</h3>
+              <h3 class="catalog-cards__item-headline--level">левел:</h3>
+              <div class="catalog-cards__wripper--after">
+                <ul class="transportation-list catalog-cards__transportation-list">
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                </ul>
+                <div class="level catalog-cards__level">
+                  <p class="calalog-cards__level-number">99</p>
+                </div>
+              </div>
+              <a href="response-page.html" class="oval-button catalog-cards__button">Позвать!</a>
+            </li>
+            <li class="catalog-cards__item">
+              <div class="catalog-cards__wripper--before">
+                <a href="#" class="catalog-cards__image-link">
+                  <img class="catalog-cards__image" src="http://placehold.it/150x100" alt="Петя Демин" width="TODO:" height="TODO:">
+                </a>
+                <a class="user-name catalog-cards__user-name" href="#">Петя Демин</a>
+                <div class="status-mark status-mark--offline catalog-cards__status-mark"></div>
+                <div class="likes">
+                  <a class="like-button likes__like-button likes__like-button--inactive"></a>
+                  <span class="likes__count">150</span>
+                </div>
+                <ul class="tag-list catalog-cards__tag-list">
+                  <li class="tag-list__tag">#бургер</li>
+                  <li class="tag-list__tag">#бар</li>
+                  <li class="tag-list__tag">#футбол</li>
+                  <li class="tag-list__tag">#концерт</li>
+                  <li class="tag-list__tag">#крафт</li>
+                </ul>
+              </div>
+              <h3 class="catalog-cards__item-headline">хочет посетить:</h3>
+              <ul class="country-list catalog-cards__country-list">
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>Бельгия</p>
+                </li>
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>Чехия</p>
+                </li>
+              </ul>
+              <h3 class="catalog-cards__item-headline">транспорт:</h3>
+              <h3 class="catalog-cards__item-headline--level">левел:</h3>
+              <div class="catalog-cards__wripper--after">
+                <ul class="transportation-list catalog-cards__transportation-list">
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                </ul>
+                <div class="level catalog-cards__level">
+                  <p class="calalog-cards__level-number">80</p>
+                </div>
+              </div>
+              <a href="response-page.html" class="oval-button catalog-cards__button">Позвать!</a>
+            </li>
+            <li class="catalog-cards__item">
+              <div class="catalog-cards__wripper--before">
+                <a href="#" class="catalog-cards__image-link">
+                  <img class="catalog-cards__image" src="http://placehold.it/150x100" alt="Марк Смолов" width="TODO:" height="TODO:">
+                </a>
+                <a class="user-name catalog-cards__user-name" href="#">Марк Смолов</a>
+                <div class="status-mark status-mark--offline catalog-cards__status-mark"></div>
+                <div class="likes">
+                  <a class="like-button likes__like-button likes__like-button--inactive"></a>
+                  <span class="likes__count">1700</span>
+                </div>
+                <ul class="tag-list catalog-cards__tag-list">
+                  <li class="tag-list__tag">#рэп</li>
+                  <li class="tag-list__tag">#тату</li>
+                  <li class="tag-list__tag">#хайпбист</li>
+                  <li class="tag-list__tag">#кроссовки</li>
+                  <li class="tag-list__tag">#суприм</li>
+                </ul>
+              </div>
+              <h3 class="catalog-cards__item-headline">хочет посетить:</h3>
+              <ul class="country-list catalog-cards__country-list">
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>США</p>
+                </li>
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>Австралия</p>
+                </li>
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>Доминикана</p>
+                </li>
+              </ul>
+              <h3 class="catalog-cards__item-headline">транспорт:</h3>
+              <h3 class="catalog-cards__item-headline--level">левел:</h3>
+              <div class="catalog-cards__wripper--after">
+                <ul class="transportation-list catalog-cards__transportation-list">
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                </ul>
+                <div class="level catalog-cards__level">
+                  <p class="calalog-cards__level-number">25</p>
+                </div>
+              </div>
+              <a href="response-page.html" class="oval-button catalog-cards__button">Позвать!</a>
+            </li>
+            <li class="catalog-cards__item">
+              <div class="catalog-cards__wripper--before">
+                <a href="#" class="catalog-cards__image-link">
+                  <img class="catalog-cards__image" src="http://placehold.it/150x100" alt="Лариса Роговая" width="TODO:" height="TODO:">
+                </a>
+                <a class="user-name catalog-cards__user-name" href="#">Лариса Роговая</a>
+                <div class="status-mark status-mark--online catalog-cards__status-mark"></div>
+                <div class="likes">
+                  <a class="like-button likes__like-button likes__like-button--inactive"></a>
+                  <span class="likes__count">23</span>
+                </div>
+                <ul class="tag-list catalog-cards__tag-list">
+                  <li class="tag-list__tag">#образование</li>
+                  <li class="tag-list__tag">#карьера</li>
+                  <li class="tag-list__tag">#учёба</li>
+                  <li class="tag-list__tag">#линкедин</li>
+                </ul>
+              </div>
+              <h3 class="catalog-cards__item-headline">хочет посетить:</h3>
+              <ul class="country-list catalog-cards__country-list">
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>Великобритания</p>
+                </li>
+                <li class="country-list__item">
+                  <p class="country-list__desc"><span class="visually-hidden">Хочет посетить: </span>Германия</p>
+                </li>
+              </ul>
+              <h3 class="catalog-cards__item-headline">транспорт:</h3>
+              <h3 class="catalog-cards__item-headline--level">левел:</h3>
+              <div class="catalog-cards__wripper--after">
+                <ul class="transportation-list catalog-cards__transportation-list">
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                  <li class="catalog-cards__transportation-icon"></li>
+                </ul>
+                <div class="level catalog-cards__level">
+                  <p class="calalog-cards__level-number">50</p>
+                </div>
+              </div>
+              <a href="response-page.html" class="oval-button catalog-cards__button">Позвать!</a>
+            </li>
+          </ul>
+          <a href="new-fellow-travellers.html" class="show-more">Показать ещё</a>
+        </section>
+        <section class="pagination">
+          <h2>Перейти на другую страницу</h2>
+          <ul class="pagination-list">
+            <li class="pagination-list__arrow-item">
+              <a href="#" class="pagination-list__backward-link visually-hidden">Показать предыдущую страницу</a>
+            </li>
+            <li class="pagination-list__arrow-item">
+              <a href="#" class="pagination-list__forward-link visually-hidden">Показать следующую страницу</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img src="http://placehold.it/150x100" alt="Погнали?" class="page-header__logo-image" width="TODO:" height="TODO:">
+      </a>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--footer">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--footer">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--footer">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <div class="developed-by">
+        <p class="light-desc--gray">Разработано</p>
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img src="TODO:" width="27" height="34" alt="Логотип HTML-Academy" aria-label="Логотип HTML-Academy">
+        </a>
+      </div>
+    </footer>
+  </body>
+
+</html>
