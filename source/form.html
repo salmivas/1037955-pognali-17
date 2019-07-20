@@ -8,20 +8,23 @@
 
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Погнали?" class="page-header__logo-image" width="TODO:" height="TODO:">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="http://placehold.it/150x100" alt="Погнали?" class="page-header__logo-image" width="TODO:" height="TODO:">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
+      <div class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <nav class="main-nav__wrapper">
           <ul class="site-list main-nav__list">
             <li class="site-list__item">
-              <a>О сервисе</a>
+              <a href=".">О сервисе</a>
             </li>
-            <li class="site-list__item--active">
+            <li class="site-list__item  site-list__item--current-item">
               <a href="catalog.html">Направления</a>
             </li>
-            <li class="site-list__item site-list__item">
+            <li class="site-list__item">
               <a href="form.html">Попутчики</a>
             </li>
           </ul>
@@ -30,12 +33,12 @@
               <a href="login.html" class="oval-button user-list__login">Авторизация</a>
             </li>
           </ul>
-        </div>
-      </nav>
-      <div class="contacts page-header__contacts">
-        <p class="contacts__item--blue"><a class="contacts__phone">8 800 555-86-28</a></p>
-        <p class="contacts__item--blue"><a class="contacts__email">mail@htmlacademy.ru</a></p>
+        </nav>
       </div>
+      <ul class="contacts page-header__contacts">
+        <li class="contacts__item"><a class="contacts__contact contacts__contact--blue contacts__phone">8 800 555-86-28</a></li>
+        <li class="contacts__item"><a class="contacts__contact contacts__contact--blue contacts__email">mail@htmlacademy.ru</a></li>
+      </ul>
       <ul class="social">
         <li class="social__item">
           <a href="#" class="social__link social__link--header">
@@ -54,37 +57,37 @@
         </li>
       </ul>
     </header>
-  </body>
-  <main>
+    <main>
 
-  </main>
-  <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img src="http://placehold.it/150x100" alt="Погнали?" class="page-header__logo-image" width="TODO:" height="TODO:">
-    </a>
-    <ul class="social">
-      <li class="social__item">
-        <a href="#" class="social__link social__link--footer">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__link social__link--footer">
-          <span class="visually-hidden">Vkontakte</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__link social__link--footer">
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-    </ul>
-    <div class="developed-by">
-      <p class="light-desc--gray">Разработано</p>
-      <a class="footer-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <img src="TODO:" width="27" height="34" alt="Логотип HTML-Academy" aria-label="Логотип HTML-Academy">
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img src="http://placehold.it/150x100" alt="Погнали?" class="page-footer__logo-image" width="TODO:" height="TODO:">
       </a>
-    </div>
-  </footer>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--footer">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--footer">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--footer">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright page-footer__copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img src="TODO:" width="27" height="34" alt="Логотип HTML-Academy" aria-label="Логотип HTML-Academy">
+        </a>
+      </div>
+    </footer>
+  </body>
 
 </html>
