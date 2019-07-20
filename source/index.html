@@ -18,7 +18,7 @@
         <nav class="main-nav__wrapper">
           <ul class="site-list main-nav__list">
             <li class="site-list__item">
-              <a href=".">О сервисе</a>
+              <a href="#">О сервисе</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Направления</a>
@@ -35,8 +35,8 @@
         </nav>
       </div>
       <ul class="contacts page-header__contacts">
-        <li class="contacts__item"><a class="contacts__contact contacts__contact--blue contacts__phone">8 800 555-86-28</a></li>
-        <li class="contacts__item"><a class="contacts__contact contacts__contact--blue contacts__email">mail@htmlacademy.ru</a></li>
+        <li class="contacts__item"><a class="contacts__contact contacts__contact--phone contacts__contact--blue">8 800 555-86-28</a></li>
+        <li class="contacts__item"><a class="contacts__contact contacts__contact--email contacts__contact--blue">mail@htmlacademy.ru</a></li>
       </ul>
       <ul class="social">
         <li class="social__item">
@@ -233,12 +233,12 @@
         <form class="registration__form" action="registration.html" method="post">
           <label for="registration-email" class="visually-hidden">Почта для регистрации</label>
           <input type="email" name="email-address" placeholder="E-mail" id="registration-email">
-          <button class="button page-main__button page-main__button--registration" type="submit" name="Регистрация">Зарегистрироваться</button>
+          <button class="button page-main__button page-main__button--registration" type="submit" name="Регистрация" aria-label="Зарегистрироваться"></button>
         </form>
         <b class="registration__question">Остались вопросы? Мы с радостью на них ответим!</b>
         <ul class="contacts registration__contacts">
-          <li class="contacts__item contacts__item--yellow"><a class="contacts__phone">8 800 555-86-28</a></li>
-          <li class="contacts__item contacts__item--yellow"><a class="contacts__email">mail@htmlacademy.ru</a></li>
+          <li class="contacts__item"><a class="contacts__contact contacts__contact--phone contacts__contact--yellow">8 800 555-86-28</a></li>
+          <li class="contacts__item"><a class="contacts__contact contacts__contact--email contacts__contact--yellow">mail@htmlacademy.ru</a></li>
         </ul>
       </section>
       <section class="our-location">
