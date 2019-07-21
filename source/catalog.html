@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Погнали, каталог</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="http://placehold.it/150x100" alt="Погнали?" class="page-header__logo-image" width="TODO:" height="TODO:">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
+      <div class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav__wrapper">
+          <ul class="site-list main-nav__list">
+            <li class="site-list__item">
+              <a href=".">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Направления</a>
+            </li>
+            <li class="site-list__item site-list__item--current-item">
+              <a href="form.html">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="user-list main-nav__list">
+            <li class="user-list__item">
+              <a href="login.html" class="oval-button user-list__login">Авторизация</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="contacts page-header__contacts">
+        <li class="contacts__item"><a class="contacts__contact contacts__contact--phone contacts__contact--blue">8 800 555-86-28</a></li>
+        <li class="contacts__item"><a class="contacts__contact contacts__contact--email contacts__contact--blue">mail@htmlacademy.ru</a></li>
+      </ul>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--header">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--header">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--header">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main class="catalog-main">
+      <section class="countries-filter">
+        <h2 class="countries-filter__headline">Фильтрация по странам</h2>
+      </section>
+      <div class="catalog-main__wrapper">
+        <section class="travellers-filter">
+          <form class="travellers-filter__form" method="post" action="https://echo.htmlacademy.ru">
+          </form>
+        </section>
+        <section class="catalog-travellers">
+          <h2 class="block-headline catalog-travellers__block-headline visually-hidden">Попутчики</h2>
+          <ul class="catalog-travellers__list">
+            <li class="catalog-card catalog-travellers__item">
+              <div class="catalog-card__wripper-before">
+                <a href="#" class="catalog-card__image-link">
+                  <img class="catalog-card__image" src="http://placehold.it/150x100" alt="Таня Фирсова" width="TODO:" height="TODO:">
+                </a>
+                <div class="catalog-card__likes">
+                  <a class="catalog-card__like-button catalog-card__like-button--active"></a>
+                  <p class="catalog-card__likes-count">1,5 m</p>
+                </div>
+                <a class="catalog-card__user-name catalog-card__user-name--offline" href="#">Таня Фирсова</a>
+                <ul class="catalog-card__tag-list">
+                  <li class="catalog-card__tag">#ЗОЖ</li>
+                  <li class="catalog-card__tag">#ПП</li>
+                  <li class="catalog-card__tag">#Фитнес</li>
+                  <li class="catalog-card__tag">#пляж</li>
+                  <li class="catalog-card__tag">#авокадо</li>
+                  <li class="catalog-card__tag">#смузи</li>
+                </ul>
+              </div>
+              <h3 class="catalog-card__item-headline">хочет посетить:</h3>
+              <ul class="catalog-card__country-list">
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Шри-Ланка" width="26" height="18">
+                  <p class="catalog-card__country-name">Шри-Ланка</p>
+                </li>
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Тайланд" width="26" height="18">
+                  <p class="catalog-card__country-name">Тайланд</p>
+                </li>
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Сейшелы" width="26" height="18">
+                  <p class="catalog-card__country-name">Сейшелы</p>
+                </li>
+              </ul>
+              <h3 class="catalog-card__item-headline">транспорт:</h3>
+              <h3 class="catalog-card__item-level">левел:</h3>
+              <div class="catalog-card__wripper-after">
+                <ul class="catalog-card__transportation-list">
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                </ul>
+                <div class="catalog-card__level">
+                  <p class="catalog-card__level-number">99</p>
+                </div>
+              </div>
+              <a href="response-page.html" class="oval-button catalog-card__button">Позвать!</a>
+            </li>
+            <li class="catalog-card catalog-travellers__item">
+              <div class="catalog-card__wripper-before">
+                <a href="#" class="catalog-card__image-link">
+                  <img class="catalog-card__image" src="http://placehold.it/150x100" alt="Петя Демин" width="TODO:" height="TODO:">
+                </a>
+                <div class="catalog-card__likes">
+                  <a class="catalog-card__like-button catalog-card__like-button--active"></a>
+                  <p class="catalog-card__likes-count">150</p>
+                </div>
+                <a class="catalog-card__user-name catalog-card__user-name--offline" href="#">Петя Демин</a>
+                <ul class="catalog-card__tag-list">
+                  <li class="catalog-card__tag">#бургер</li>
+                  <li class="catalog-card__tag">#бар</li>
+                  <li class="catalog-card__tag">#футбол</li>
+                  <li class="catalog-card__tag">#концерт</li>
+                  <li class="catalog-card__tag">#крафт</li>
+                </ul>
+              </div>
+              <h3 class="catalog-card__item-headline">хочет посетить:</h3>
+              <ul class="catalog-card__country-list">
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Бельгия" width="26" height="18">
+                  <p class="catalog-card__country-name">Бельгия</p>
+                </li>
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Чехия" width="26" height="18">
+                  <p class="catalog-card__country-name">Чехия</p>
+                </li>
+              </ul>
+              <h3 class="catalog-card__item-headline">транспорт:</h3>
+              <h3 class="catalog-card__item-level">левел:</h3>
+              <div class="catalog-card__wripper-after">
+                <ul class="catalog-card__transportation-list">
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                </ul>
+                <div class="catalog-card__level">
+                  <p class="catalog-card__level-number">80</p>
+                </div>
+              </div>
+              <a href="response-page.html" class="oval-button catalog-card__button">Позвать!</a>
+            </li>
+            <li class="catalog-card catalog-travellers__item">
+              <div class="catalog-card__wripper-before">
+                <a href="#" class="catalog-card__image-link">
+                  <img class="catalog-card__image" src="http://placehold.it/150x100" alt="Марк Смолов" width="TODO:" height="TODO:">
+                </a>
+                <div class="catalog-card__likes">
+                  <a class="catalog-card__like-button catalog-card__like-button--active"></a>
+                  <p class="catalog-card__likes-count">1700</p>
+                </div>
+                <a class="catalog-card__user-name catalog-card__user-name--offline" href="#">Марк Смолов</a>
+                <ul class="catalog-card__tag-list">
+                  <li class="catalog-card__tag">#рэп</li>
+                  <li class="catalog-card__tag">#тату</li>
+                  <li class="catalog-card__tag">#хайпбист</li>
+                  <li class="catalog-card__tag">#кроссовки</li>
+                  <li class="catalog-card__tag">#суприм</li>
+                </ul>
+              </div>
+              <h3 class="catalog-card__item-headline">хочет посетить:</h3>
+              <ul class="catalog-card__country-list">
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="США" width="26" height="18">
+                  <p class="catalog-card__country-name">США</p>
+                </li>
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Австралия" width="26" height="18">
+                  <p class="catalog-card__country-name">Австралия</p>
+                </li>
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Доминикана" width="26" height="18">
+                  <p class="catalog-card__country-name">Доминикана</p>
+                </li>
+              </ul>
+              <h3 class="catalog-card__item-headline">транспорт:</h3>
+              <h3 class="catalog-card__item-level">левел:</h3>
+              <div class="catalog-card__wripper-after">
+                <ul class="catalog-card__transportation-list">
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                </ul>
+                <div class="catalog-card__level">
+                  <p class="catalog-card__level-number">25</p>
+                </div>
+              </div>
+              <a href="response-page.html" class="oval-button catalog-card__button">Позвать!</a>
+            </li>
+            <li class="catalog-card catalog-travellers__item">
+              <div class="catalog-card__wripper-before">
+                <a href="#" class="catalog-card__image-link">
+                  <img class="catalog-card__image" src="http://placehold.it/150x100" alt="Лариса Роговая" width="TODO:" height="TODO:">
+                </a>
+                <div class="catalog-card__likes">
+                  <a class="catalog-card__like-button catalog-card__like-button--active"></a>
+                  <p class="catalog-card__likes-count">23</p>
+                </div>
+                <a class="catalog-card__user-name catalog-card__user-name--online" href="#">Лариса Роговая</a>
+                <ul class="catalog-card__tag-list">
+                  <li class="catalog-card__tag">#образование</li>
+                  <li class="catalog-card__tag">#карьера</li>
+                  <li class="catalog-card__tag">#учёба</li>
+                  <li class="catalog-card__tag">#линкедин</li>
+                </ul>
+              </div>
+              <h3 class="catalog-card__item-headline">хочет посетить:</h3>
+              <ul class="catalog-card__country-list">
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Великобритания" width="26" height="18">
+                  <p class="catalog-card__country-name">Великобритания</p>
+                </li>
+                <li class="catalog-card__country">
+                  <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Германия" width="26" height="18">
+                  <p class="catalog-card__country-name">Германия</p>
+                </li>
+              </ul>
+              <h3 class="catalog-card__item-headline">транспорт:</h3>
+              <h3 class="catalog-card__item-level">левел:</h3>
+              <div class="catalog-card__wripper-after">
+                <ul class="catalog-card__transportation-list">
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                  <li class="catalog-card__transportation-icon"></li>
+                </ul>
+                <div class="catalog-card__level">
+                  <p class="catalog-card__level-number">50</p>
+                </div>
+              </div>
+              <a href="response-page.html" class="oval-button catalog-card__button">Позвать!</a>
+            </li>
+          </ul>
+          <a href="new-fellow-travellers.html" class="catalog-main__show-more">Показать ещё</a>
+          <ul class="catalog-main__pagination-list">
+            <li class="catalog-main__arrow catalog-main__arrow--backward">
+              <a href="#" class="catalog-main__backward-link">Показать предыдущую страницу</a>
+            </li>
+            <li class="catalog-main__arrow catalog-main__arrow--forward">
+              <a href="#" class="catalog-main__forward-link">Показать следующую страницу</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img src="http://placehold.it/150x100" alt="Погнали?" class="page-footer__logo-image" width="TODO:" height="TODO:">
+      </a>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--footer">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--footer">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--footer">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright page-footer__copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img src="TODO:" width="27" height="34" alt="Логотип HTML-Academy" aria-label="Логотип HTML-Academy">
+        </a>
+      </div>
+    </footer>
+  </body>
+
+</html>
