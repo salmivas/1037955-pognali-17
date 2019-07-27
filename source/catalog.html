@@ -3,7 +3,9 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали, каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -12,7 +14,7 @@
         <a class="page-header__logo">
           <img src="http://placehold.it/150x100" alt="Погнали?" class="page-header__logo-image" width="TODO:" height="TODO:">
         </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
       </div>
       <div class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -72,13 +74,13 @@
             <li class="catalog-card catalog-travellers__item">
               <div class="catalog-card__wripper-before">
                 <a href="#" class="catalog-card__image-link">
-                  <img class="catalog-card__image" src="http://placehold.it/150x100" alt="Таня Фирсова" width="TODO:" height="TODO:">
+                  <img class="catalog-card__image" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова" width="70" height="70">
                 </a>
+                <a class="catalog-card__user-name catalog-card__user-name--offline" href="#">Таня Фирсова</a>
                 <div class="catalog-card__likes">
                   <a class="catalog-card__like-button catalog-card__like-button--active"></a>
                   <p class="catalog-card__likes-count">1,5 m</p>
                 </div>
-                <a class="catalog-card__user-name catalog-card__user-name--offline" href="#">Таня Фирсова</a>
                 <ul class="catalog-card__tag-list">
                   <li class="catalog-card__tag">#ЗОЖ</li>
                   <li class="catalog-card__tag">#ПП</li>
