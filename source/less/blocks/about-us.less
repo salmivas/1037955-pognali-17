@@ -4,11 +4,88 @@
   background-position: 18px 0;
   background-size: 292px 352px;
   background-repeat: no-repeat;
-  border-radius: 30px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
-.about-us__wrapper {
-  padding-top: 33px;
+.about-us__text-block-headline {
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.about-us__text-block-description {
   width: 210px;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 625px;
+    margin-bottom: 38px;
+  }
+}
+
+.about-us__text-block-conclusion {
+  width: 230px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
+    margin-bottom: 84px;
+  }
+}
+
+.about-us__trick-wrapper {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: unset;
+  }
+}
+
+.about-us__trick-wrapper2 {
+  display: unset;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: unset;
+  }
+}
+
+.about-us__button {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+
+    width: 274px;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+  }
 }
