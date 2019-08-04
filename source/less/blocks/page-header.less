@@ -221,6 +221,14 @@
   @media (min-width: @desktop-width) {
     margin-left: auto;
   }
+
+  &--non-main {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
 }
 
 .page-header__button-item {

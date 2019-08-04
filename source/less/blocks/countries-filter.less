@@ -1,3 +1,27 @@
 .countries-filter {
+  position: relative;
+
   background-color: @pale-grey-three;
+  border-radius: 0 0 20px 20px;
+
+  .top-liner(-1);
+
+  @media (min-width: @tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
+}
+
+.countries-filter__headline {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  color: @dark-blue-grey;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
