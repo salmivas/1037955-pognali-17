@@ -1,10 +1,132 @@
-.catalog-main {
+.catalog-main__container {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
   background-color: @pale-grey;
+
+  .top-liner(-2);
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding-top: 77px;
+  }
 }
 
-.catalog-main__wrapper {
-  display: flex;
+.catalog-main__countries-filter {
+  min-height: 53px;
 
-  padding-left: 25px;
-  padding-right: 25px;
+  @media (min-width: @tablet-width) {
+    min-height: 136px;
+  }
+}
+
+.catalog-main__travellers-filter {
+  width: 100%;
+  height: 624px; //TODO: Убрать. Временно для разметки
+  margin: 25px 0 25px 0;
+
+  background-color: @light-gold;
+  border-radius: 20px;
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    margin: 0;
+
+    width: 285px;
+    height: 815px; //TODO: Убрать. Временно для разметки
+  }
+}
+
+.catalog-main__catalog-travellers {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    width: 950px;
+  }
+}
+
+.catalog-main__pagination-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+
+  .no-list();
+  margin-top: 100px; //TODO: Убрать. Временно для разметки
+  margin-bottom: 100px; //TODO: Убрать. Временно для разметки
+
+  background-color: @white;
+  border-radius: 20px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+
+    padding: 25px 28px;
+  }
+}
+
+.catalog-main__sheet-item {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+}
+
+.catalog-main__arrow {
+  padding: 18px 0;
+  line-height: 0;
+
+  @media (min-width: @tablet-width) {
+    &--backward {
+      margin-left: auto;
+    }
+
+    text-align: center;
+    vertical-align: middle;
+    width: 42px;
+  }
+}
+
+.catalog-main__sheet-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: @dark-blue-grey-nnm;
+
+  background-color: initial;
+  border-radius: 50%;
+
+  &--active {
+    background-color: @light-gold;
+  }
+}
+
+.catalog-main__show-more {
+  display: block;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: @dark-slate-blue;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }

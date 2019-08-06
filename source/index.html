@@ -9,129 +9,131 @@
   </head>
 
   <body>
-    <header class="page-header page-header--open">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" class="page-header__logo-image" width="100" height="19">
-        </a>
-        <button class="page-header__toggle" type="button">Открыть/Закрыть</button>
+    <header class="page-header container">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile-white@1x.png" alt="Погнали?" class="page-header__logo-image" width="100" height="19">
+      </a>
+      <button class="page-header__toggle" type="button">Открыть/Закрыть</button>
+      <nav class="main-nav page-header__drop-down">
+        <ul class="site-list main-nav__list">
+          <li class="site-list__item">
+            <a href="#" class="site-list__reference">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__reference">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__reference">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__mobile-wrapper">
+        <ul class="contacts page-header__contacts">
+          <li class="contacts__item"><a class="contacts__contact contacts__contact--phone contacts__contact--blue">8 800 555-86-28</a></li>
+          <li class="contacts__item"><a class="contacts__contact contacts__contact--email contacts__contact--blue">mail@htmlacademy.ru</a></li>
+        </ul>
+        <ul class="social page-header__social">
+          <li class="social__item social__item--transparent">
+            <a href="#" class="social__link social__link--header">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item social__item--transparent">
+            <a href="#" class="social__link social__link--header">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social__item social__item--transparent">
+            <a href="#" class="social__link social__link--header">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="main-nav">
-        <nav class="main-nav__wrapper">
-          <ul class="site-list main-nav__list">
-            <li class="site-list__item">
-              <a href="#" class="site-list__reference">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__reference">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__reference">Попутчики</a>
-            </li>
-          </ul>
-          <a href="login.html" class="oval-button main-nav__login">Авторизация</a>
-        </nav>
-      </div>
-      <ul class="contacts page-header__contacts">
-        <li class="contacts__item"><a class="contacts__contact contacts__contact--phone contacts__contact--blue">8 800 555-86-28</a></li>
-        <li class="contacts__item"><a class="contacts__contact contacts__contact--email contacts__contact--blue">mail@htmlacademy.ru</a></li>
+      <h1 class="page-header__title">В путешествие с крутыми попутчиками!</h1>
+      <ul class="page-header__button-list">
+        <li class="page-header__button-item">
+          <a href="#" class="page-header__item page-header__item--call">
+            <span class="visually-hidden">Позвонить</span>
+          </a>
+        </li>
+        <li class="page-header__button-item">
+          <a href="#" class="page-header__item page-header__item--email">
+            <span class="visually-hidden">Написать</span>
+          </a>
+        </li>
+        <li class="page-header__button-item page-header__button-item--login">
+          <a href="login.html" class="oval-button page-header__item page-header__item--login">Авторизация</a>
+        </li>
       </ul>
-      <ul class="social page-header__social">
-        <li class="social__item social__item--transparent">
-          <a href="#" class="social__link social__link--header">
-            <span class="visually-hidden">Facebook</span>
-          </a>
+      <blockquote class="reviews page-header__reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <p class="reviews__review">&laquo;Лучшее приложение, что я видел в жизни!&raquo;</p>
+        <p class="reviews__author">Мурат Эльтазин<br> главный редактор газеты &laquo;гаджетлайф&raquo;</p>
+      </blockquote>
+      <ul class="steps page-header__steps" aria-label="Как работает">
+        <li class="steps__list-item steps__list-item--first">
+          <p class="steps__list-desc steps__list-desc--first">Выберите<br> направление</p>
         </li>
-        <li class="social__item social__item--transparent">
-          <a href="#" class="social__link social__link--header">
-            <span class="visually-hidden">Vkontakte</span>
-          </a>
+        <li class="steps__list-item steps__list-item--second">
+          <p class="steps__list-desc steps__list-desc--second">Изучите идеи<br> путешественников</p>
         </li>
-        <li class="social__item social__item--transparent">
-          <a href="#" class="social__link social__link--header">
-            <span class="visually-hidden">Instagram</span>
-          </a>
+        <li class="steps__list-item steps__list-item--third">
+          <p class="steps__list-desc steps__list-desc--third">Находите тех,<br> кто похож на вас</p>
+        </li>
+        <li class="steps__list-item steps__list-item--fourth">
+          <p class="steps__list-desc steps__list-desc--fourth">Путешествуйте<br> вместе!</p>
         </li>
       </ul>
     </header>
     <main class="page-main">
-      <section class="main-head">
-        <h1 class="main-head__title">В путешествие с крутыми попутчиками!</h1>
-        <ul class="main-head__button-list">
-          <li class="main-head__list-item"><a href="#" class="main-head__item main-head__call"><span class="visually-hidden">Позвонить</span></a></li>
-          <li class="main-head__list-item"><a href="#" class="main-head__item main-head__email"></a><span class="visually-hidden">Написать</span></li>
-          <li class="main-head__list-item main-head__list-item--login"><a href="login.html" class="oval-button main-head__login">Авторизация</a></li>
-        </ul>
-        <section class="reviews">
-          <h2 class="visually-hidden">Отзывы</h2>
-          <blockquote class="reviews__item reviews__wrapper">
-            <p class="reviews__review">&laquo;Лучшее приложение, что я видел в жизни!&raquo;</p>
-            <cite class="reviews__author">Мурат Эльтазин главный редактор газеты &laquo;гаджетлайф&raquo;</cite>
-          </blockquote>
-        </section>
-        <section class="steps">
-          <h2 class="visually-hidden">Как работает</h2>
-          <ul class="steps-list">
-            <li class="steps-list__item steps-list__item--first">
-              <p class="steps-list__desc">Выберите направление</p>
-            </li>
-            <li class="steps-list__item steps-list__item--second">
-              <p class="steps-list__desc">Изучите идеи путешественников</p>
-            </li>
-            <li class="steps-list__item steps-list__item--third">
-              <p class="steps-list__desc">Находите тех, кто похож на вас</p>
-            </li>
-            <li class="steps-list__item steps-list__item--fourth">
-              <p class="steps-list__desc">Путешествуйте вместе!</p>
-            </li>
-          </ul>
-        </section>
+      <section class="about-us page-main__about-us container">
+        <h2 class="page-main__text-block-headline about-us__text-block-headline">О сервисе</h2>
+        <p class="page-main__text-block-description about-us__text-block-description"><span class="about-us__trick-wrapper">Любое путешествие веселее</span> с попутчиками, которые на одной волне с тобой! Делитесь своими <span class="about-us__trick-wrapper2">идеями путешествий</span> и черпайте вдохновение в чужих.</p>
+        <p class="page-main__text-block-conclusion about-us__text-block-conclusion">А если найдете кого-то близкого по духу — скорее зовите его в совместный трип!</p>
+        <a class="button page-main__button about-us__button" href="catalog.html">Подробнее</a>
       </section>
-      <section class="about-us page-main__about-us">
-        <div class="about-us__wrapper">
-          <h2 class="text-block-headline page-main__text-block-headline">О сервисе</h2>
-          <p class="text-block-description page-main__text-block-description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-          <p class="text-block-conclusion page-main__text-block-conclusion">А если найдёте кого-то близкого по духу - скорее зовите в совместный трип!</p>
-        </div>
-      </section>
-      <section class="directions">
-        <div class="directions__wrapper">
-          <h2 class="text-block-headline page-main__text-block-headline">Направления</h2>
-          <p class="text-block-description text-block-description--grey page-main__text-block-description">Мы не продаём туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-        </div>
+      <section class="directions page-main__directions container">
         <ul class="directions__list">
           <li class="country-card directions__item">
             <img class="country-card__image" src="/img/thailand-mobile@1x.jpg" alt="Тайланд" width="270" height="110">
+            <img class="country-card__flag" src="/img/thailand.png" alt="Thailand" width="35" height="24">
             <div class="country-card__desc-wrapper">
               <h3 class="country-card__country">Тайланд</h3>
-              <p class="country-card__visitors">18321</p>
               <p class="country-card__expression">Джунгли зовут!</p>
+              <p class="country-card__visitors">18321</p>
             </div>
           </li>
           <li class="country-card directions__item">
             <img class="country-card__image" src="/img/france-mobile@1x.jpg" alt="Франция" width="270" height="110">
+            <img class="country-card__flag" src="/img/thailand.png" alt="Thailand" width="35" height="24">
             <div class="country-card__desc-wrapper">
               <h3 class="country-card__country">Франция</h3>
-              <p class="country-card__visitors">12518</p>
               <p class="country-card__expression">Трэ бьен, манифик!</p>
+              <p class="country-card__visitors">12518</p>
             </div>
           </li>
           <li class="country-card directions__item">
             <img class="country-card__image" src="img/czech-mobile@1x.jpg" alt="Чехия" width="270" height="110">
+            <img class="country-card__flag" src="/img/thailand.png" alt="Thailand" width="35" height="24">
             <div class="country-card__desc-wrapper">
               <h3 class="country-card__country">Чехия</h3>
-              <p class="country-card__visitors">5326</p>
               <p class="country-card__expression">Закоулки старой Европы</p>
+              <p class="country-card__visitors">5326</p>
             </div>
           </li>
         </ul>
+        <div class="directions__wrapper">
+          <h2 class="page-main__text-block-headline directions__text-block-headline">Направления</h2>
+          <p class="page-main__text-block-description page-main__text-block-description--grey directions__text-block-description"><span class="directions__trick-wrapper">Мы не продаём туры</span> и ничего не рекламируем. Люди сами пишут о странах, <span class="directions__trick-wrapper2">куда хотели бы отправиться</span> и чем можно там заняться.</p>
+        </div>
         <a class="button page-main__button directions__button" href="catalog.html">Показать все</a>
       </section>
-      <section class="main-travellers">
+      <section class="main-travellers page-main__travellers container">
         <div class="main-travellers__wrapper">
-          <h2 class="text-block-headline">Попутчики</h2>
-          <p class="text-block-description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p class="text-block-conclusion">Теперь можно легко найти единомышленников!</p>
+          <h2 class="page-main__text-block-headline main-travellers__text-block-headline">Попутчики</h2>
+          <p class="page-main__text-block-description main-travellers__text-block-description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. <span class="main-travellers__trick-wrapper">Одному нужен пляж и коктейль,</span> а другому маршрут для хайкинга.</p>
+          <p class="page-main__text-block-conclusion main-travellers__text-block-conclusion"><span class="main-travellers__trick-wrapper2">Теперь можно легко</span> найти единомышленников!</p>
         </div>
         <ul class="main-travellers__list">
           <li class="main-card main-travellers__item">
@@ -205,9 +207,9 @@
         </ul>
         <a class="button page-main__button main-travellers__button" href="form.html">Показать всех</a>
       </section>
-      <section class="add-profile">
-        <h2 class="text-block-headline add-profile__text-block-headline">Добавьте свой профиль</h2>
-        <ol class="add-profile__rates-list">
+      <section class="add-profile page-main__add-profile container">
+        <h2 class="page-main__text-block-headline add-profile__text-block-headline">Добавьте свой профиль!</h2>
+        <ul class="add-profile__rates-list">
           <li class="add-profile__rates-item">
             <p class="add-profile__rates-desc">Базовое размещение</p>
             <p class="add-profile__rates-cost">бесплатно</p>
@@ -220,10 +222,10 @@
             <p class="add-profile__rates-desc">Вывод на первых позициях</p>
             <p class="add-profile__rates-cost">59 руб./мес</p>
           </li>
-        </ol>
+        </ul>
         <a class="add-profile__show-modal" href="tariffs.html">Показать тарифы для бизнеса</a>
         <section class="modal business-tariffs add-profile__business-tariffs">
-          <h2 class="text-block-headline business-tariffs__block-headline">Бизнес тарифы</h2>
+          <h2 class="page-main__text-block-headline business-tariffs__block-headline">Бизнес тарифы</h2>
           <ul class="business-tariffs__list">
             <li class="business-tariffs__item">
               <p class="business-tariffs__activity">Реклама у блоггера</p>
@@ -245,40 +247,35 @@
           <button class="business-tariffs__close" type="reset">Закрыть окно</button>
         </section>
       </section>
-      <section class="registration">
+      <section class="registration page-main__registration container">
         <h2 class="visually-hidden">Регистрация</h2>
-        <b class="text-block-headline registration__text-block-headline">Заинтересовались?</b>
-        <div class="registration__enticement-wrapper">
-          <p class="text-block-description registration__text-block-description registration__text-block-description--first">Зарегистрируйтесь, </p>
-          <p class="text-block-description registration__text-block-description registration__text-block-description--second">это быстро и бесплатно!</p>
-          <p class="text-block-description registration__text-block-description registration__text-block-description registration__text-block-description--third">Уже зарегистрированы? Тогда скорее <a class="registration__authorization-link" href="login.html">авторизуйтесь</a>.</p>
-        </div>
+        <b class="page-main__text-block-headline registration__text-block-headline">Заинтересовались?</b>
+        <p class="page-main__text-block-description registration__text-block-description">
+          Зарегистрируйтесь,<span class="registration__trick-wrapper"> это быстро и бесплатно!</span><span class="registration__trick-wrapper2"> Уже зарегистрированы? Тогда скорее <a class="registration__authorization-link" href="login.html">авторизуйтесь</a>.</span>
+        </p>
         <form class="registration__form" action="registration.html" method="post">
           <label for="registration-email" class="visually-hidden">Почта для регистрации</label>
           <input class="registration__email" type="email" name="email-address" placeholder="E-mail" id="registration-email">
-          <button class="button page-main__button registration__button" type="submit" name="Регистрация" aria-label="Зарегистрироваться"></button>
+          <button class="button page-main__button registration__button" type="submit" name="Регистрация" aria-label="Зарегистрироваться"><span class="registration__button-name">Регистрация</span></button>
         </form>
-        <div class="registration__qa-wrapper">
-          <b class="registration__question">Остались вопросы?</b>
-          <b class="registration__answer">Мы с радостью на них ответим!</b>
-        </div>
+        <b class="registration__qa-wrapper">
+          <span class="registration__trick-wrapper3">Остались вопросы?</span> Мы с радостью на них ответим!
+        </b>
         <ul class="contacts registration__contacts">
           <li class="contacts__item"><a class="contacts__contact contacts__contact--phone contacts__contact--yellow">8 800 555-86-28</a></li>
           <li class="contacts__item"><a class="contacts__contact contacts__contact--email contacts__contact--yellow">mail@htmlacademy.ru</a></li>
         </ul>
       </section>
-      <section class="our-location">
+      <section class="our-location page-main__our-location container">
         <h2 class="visually-hidden">Мы находимся</h2>
-        <div class="our-location__wrapper">
-          <p class="our-location__address">ул. Большая конюшенная, 19/8</p>
-          <a href="TODO:" class="button page-main__button page-main__button--our-location">Проложить маршрут</a>
-        </div>
+        <p class="our-location__address">ул. Большая конюшенная, 19/8</p>
+        <a href="#" class="button page-main__button page-main__button--our-location">Проложить маршрут</a>
       </section>
-      <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1562354881169!5m2!1sen!2sru" width="320px" height="auto" style="border:0" allowfullscreen tabindex="-1"></iframe>
+      <section class="map container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1562354881169!5m2!1sen!2sru" width="100%" height="100%" style="border:0" allowfullscreen tabindex="-1"></iframe>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
         <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" class="page-footer__logo-image" width="100" height="19">
       </a>

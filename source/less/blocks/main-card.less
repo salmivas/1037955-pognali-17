@@ -2,10 +2,16 @@
   background-color: @white;
   border-radius: 10px;
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 20px;
+  }
 }
 
 .main-card__photo-wrapper {
   position: relative;
+
+  line-height: 0;
 }
 
 .main-card__level {
@@ -37,6 +43,29 @@
   color: @white;
 }
 
+.main-card__cards-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-card__country-list {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-card__country {
+  margin-left: 9px;
+  margin-right: 9px;
+
+  line-height: 0;
+}
+
+
 .main-card__user-name {
   font-size: 21px;
   font-weight: 700;
@@ -44,17 +73,26 @@
   text-align: center;
   color: @dark-slate-blue;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    font-style: 24px;
+    line-height: 24px;
+  }
 }
 
 .main-card__tag-list {
-  margin: 0;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 177px;
+
+  margin: 0;
+  padding: 0 50px;
 
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px;
+  }
 }
 
 .main-card__tag {
@@ -63,6 +101,11 @@
   line-height: 18px;
   text-align: center;
   color: @greyish-brown;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .main-card__transportation-list {

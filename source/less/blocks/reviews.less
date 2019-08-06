@@ -1,19 +1,27 @@
-.reviews {
-  background-color: @dark-blue-grey;
-}
+.reviews__review {
+  margin: 0;
+  margin-bottom: 19px;
 
-.reviews-wrapper {
-  min-width: 155px;
-  margin-left: 51px;
-  margin-right: 116px;
-}
-
-.reviews-review {
   text-align: left;
   font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 44px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .reviews__author {
+  margin: 0;
+
   text-align: left;
   font-weight: 700;
+  font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }

@@ -1,20 +1,9 @@
 .add-profile {
-  position: relative;
-
   background-color: @pale-grey;
+  border-radius: 0 0 30px 30px;
 
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 67px;
-    right: 26px;
-
-    width: 99px;
-    height: 99px;
-
-    background-image: url("../../img/rates@1x.png");
-    background-size: 99px 99px;
+  @media (min-width: @tablet-width) {
+    border-radius: 0 0 60px 60px;
   }
 }
 
@@ -22,25 +11,62 @@
   width: 100px;
   margin: 0;
   padding-top: 82px;
-  margin-left: 50px;
+  margin-left: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 100%;
+
+    text-align: center;
+  }
 }
 
 .add-profile__rates-list {
   margin: 0;
-  margin-left: 50px;
+  margin-left: 25px;
   padding: 0;
+  width: 200px;
+
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 91px;
+    width: 562px;
+  }
 }
 
 .add-profile__rates-item {
+  display: flex;
+  flex-wrap: wrap;
+
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
   text-align: left;
   color: @greyish-brown;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.add-profile__rates-desc {
+  margin: 0;
+
+  text-align: left;
+}
+
+.add-profile__rates-cost {
+  margin: 0;
+
+  text-align: right;
 }
 
 .add-profile__show-modal {
-  margin-left: 50px;
+  margin-left: 25px;
 
   font-size: 16px;
   font-weight: 700;
@@ -48,8 +74,25 @@
   text-align: left;
   color: @dark-blue-grey;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 91px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .add-profile__business-tariffs {
   width: 270px;
+
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 750px;
+  }
 }

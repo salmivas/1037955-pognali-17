@@ -1,32 +1,60 @@
 .page-header {
-  padding-left: 25px;
-  padding-right: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
-  background-color: @white;
+  background-color: @dark-blue-grey-nnm;
+  background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/globe-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+
+    background-image: none; // TODO: Добавить изображение
+
+    border-radius: 0 0 60px 60px;
+  }
 }
 
-.page-header__wrapper {
+.page-header__drop-down {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   height: 73px;
 
-  line-height: 0;
-  text-align: center;
+  @media (min-width: @tablet-width) {
+    height: 132px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px; //Времено на ширину логотипа
+    height: 90px;
+  }
 }
 
 .page-header__contacts {
   margin: 0;
-  margin-bottom: 37px;
 }
 
 .page-header__social {
   margin: 0;
-  margin-bottom: 37px;
 }
 
 .page-header__toggle {
+  //TODO: Узнать, возможно есть смысл поставить tabindex="-1" в HTML
   position: relative;
   padding: 0;
   width: 19px;
@@ -40,32 +68,219 @@
   &::before {
     content: "";
     position: absolute;
-    top: 8px;
-    left: -3px;
+    top: 4px;
+    right: 0;
 
     display: block;
     height: 3px;
     width: 25px;
 
-    background-color: hsl(0, 0%, 80%);
+    background-color: @white;
     border-radius: 3px;
-
-    transform: rotate(45deg);
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: -3px;
+    top: 12px;
+    right: 0;
 
     display: block;
     height: 3px;
     width: 25px;
 
-    background-color: hsl(0, 0%, 80%);
+    background-color: @white;
     border-radius: 3px;
+  }
 
-    transform: rotate(-45deg);
+  @media (min-width: @desktop-width) {
+    display: block;
+
+    margin-left: 81px;
+    margin-right: 44px;
+
+    pointer-events: none;
+    cursor: default;
+
+    &::after {
+      content: none;
+    }
+
+    &::before {
+      top: 9px;
+
+      width: 60px;
+      height: 2px;
+
+      border-radius: 2px;
+    }
+  }
+}
+
+.page-header__mobile-wrapper {
+  display: none;
+}
+
+.page-header__reviews {
+  margin: 0;
+  margin-left: 26px;
+  margin-right: 85px;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+
+    margin: 0;
+    margin-bottom: 231px;
+    padding-left: 34px;
+
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 285px;
+    margin: 0;
+    margin-top: 85px;
+    padding: 0;
+    padding-right: 20px;
+  }
+}
+
+.page-header__steps {
+  order: 5;
+
+  width: 100%;
+  margin: 0;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 120px;
+    margin-bottom: 143px;
+  }
+}
+
+.page-header__title {
+  padding: 0 15px;
+  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 245px;
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+
+    margin-top: 30px;
+    margin-bottom: 86px;
+    padding: 0 145px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 395px;
+    margin: 0;
+    margin-top: 91px;
+    margin-left: 67px;
+    margin-right: auto;
+    padding: 0;
+
+    text-align: left;
+  }
+}
+
+.page-header__button-list {
+  display: flex;
+
+  width: 100%;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+  }
+
+  &--non-main {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
+}
+
+.page-header__button-item {
+  &--login {
+    flex-grow: 1;
+  }
+}
+
+.page-header__item {
+  display: block;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 20px;
+
+  background-color: @light-gold;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+  }
+
+  &--call {
+    background-color: @mango-two;
+  }
+
+  &--email {
+    background-color: @mango-three;
+  }
+
+  &--login {
+    display: block;
+
+    width: 189px;
+
+    line-height: 40px;
+
+    @media (min-width: @tablet-width) {
+      height: 50px;
+      width: 188px;
+
+      line-height: 50px;
+      border-radius: 25px;
+    }
   }
 }

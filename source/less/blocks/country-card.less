@@ -1,13 +1,48 @@
 .country-card {
-  // background-color: @white;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: @white;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+
+    border-radius: 20px;
+  }
+}
+
+.country-card__image {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin: 15px 0; //TODO: Временно, для задания высоты карточки - макетной
+  }
+}
+
+.country-card__flag {
+  position: absolute;
+
+  @media (min-width: @tablet-width) {
+    left: 398px;
+    top: 16px;
+  }
 }
 
 .country-card__desc-wrapper {
-  margin-bottom: 10px;
-  padding-top: 28px;
-  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
 
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .country-card__country {
@@ -18,6 +53,11 @@
   line-height: 21px;
   text-align: left;
   color: @dark-blue-grey-nnm;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .country-card__visitors {
@@ -29,6 +69,11 @@
   text-align: left;
   color: @greyish-brown;
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .country-card__expression {
@@ -41,4 +86,8 @@
   text-align: left;
   color: @greyish-brown;
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
