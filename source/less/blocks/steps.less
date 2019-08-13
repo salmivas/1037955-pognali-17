@@ -2,6 +2,8 @@
   padding: 0;
 
   list-style: none;
+
+  counter-reset: steps;
 }
 
 .steps__list-item {
@@ -136,6 +138,8 @@
 }
 
 .steps__list-desc {
+  position: relative;
+
   margin: 0;
   padding: 0;
   padding-top: 12px;
@@ -146,6 +150,32 @@
   font-weight: 700;
   text-align: left;
   color: @dark-blue-grey-nnm;
+
+  &::before {
+    counter-increment: steps;
+    content: counter(steps);
+
+    position: absolute;
+    top: 12px;
+    left: 239px;
+
+    color: @white;
+    line-height: 1;
+
+    @media (min-width: @tablet-width) {
+      top: 68px;
+      left: 31px;
+
+      font-size: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 9px;
+      left: 269px;
+
+      font-size: 24px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 31px;
@@ -161,6 +191,37 @@
 
     &--second {
       padding-top: 11px;
+      &::before {
+        @media (min-width: @desktop-width) {
+          left: 299px;
+        }
+      }
+    }
+
+    &--third {
+      &::before {
+        @media (min-width: @tablet-width) {
+          top: 90px;
+        }
+
+        @media (min-width: @desktop-width) {
+          top: 9px;
+          left: 301px;
+        }
+      }
+    }
+
+    &--fourth {
+      &::before {
+        @media (min-width: @tablet-width) {
+          top: 90px;
+        }
+
+        @media (min-width: @desktop-width) {
+          top: 9px;
+          left: 269px;
+        }
+      }
     }
   }
 

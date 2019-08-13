@@ -1,21 +1,7 @@
 .page-footer {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding-top: 38px;
-
   background-color: @white;
-
-  @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding-top: 0;
-  }
 
   &::before {
     content: "";
@@ -24,23 +10,40 @@
     bottom: 100%;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 38px;
     color: inherit;
     background-color: inherit;
     z-index: 1;
     border-radius: 30px 30px 0 0;
 
     @media (min-width: @tablet-width) {
-      height: 60px;
+      height: 48px;
 
       border-radius: 60px 60px 0 0;
     }
   }
 }
 
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 0;
+    padding-bottom: 46px;
+  }
+}
+
 .page-footer__social {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -56,6 +59,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    width: 157px; //TODO: Для сетки, убрать.
     margin: 0;
   }
 }
@@ -66,6 +70,7 @@
   justify-content: space-between;
 
   width: 100%;
+  padding-top: 14px;
 
   border-top: 1px solid @black-5;
 

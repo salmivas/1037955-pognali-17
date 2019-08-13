@@ -1,13 +1,46 @@
 .about-us {
   background-color: @dark-blue-grey;
-  background-image: url("../../img/about-mobile@1x.png");
-  background-position: 18px 0;
-  background-size: 292px 352px;
-  background-repeat: no-repeat;
   border-radius: 0 0 30px 30px;
 
   @media (min-width: @tablet-width) {
     border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+
+    .top-liner(-1);
+  }
+}
+
+.about-us__container {
+  padding-left: 49px;
+  padding-top: 33px;
+  padding-bottom: 81px;
+
+  background-image: url("../../img/about-mobile@1x.png");
+  background-position: 18px 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 75px;
+    padding-top: 139px;
+
+    background-image:
+      url("../../img/about-tablet@1x.png"),
+      url("../../img/rounded-rectangle-blue_tablet.png");
+    background-position: 420px 144px, 40px 96px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding-left: 131px;
+    padding-top: 132px;
+
+    background-image:
+    url("../../img/about-desktop@1x.png"),
+    url("../../img/rounded-rectangle-blue_desktop.png");
+    background-position: 750px 85px, 60px 71px;
   }
 }
 
@@ -56,23 +89,23 @@
   display: block;
 
   @media (min-width: @tablet-width) {
-    display: unset;
+    display: inline;
   }
 
   @media (min-width: @desktop-width) {
-    display: unset;
+    display: inline;
   }
 }
 
 .about-us__trick-wrapper2 {
-  display: unset;
+  display: inline;
 
   @media (min-width: @tablet-width) {
     display: block;
   }
 
   @media (min-width: @desktop-width) {
-    display: unset;
+    display: inline;
   }
 }
 

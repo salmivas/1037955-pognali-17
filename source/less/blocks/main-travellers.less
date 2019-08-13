@@ -1,24 +1,49 @@
 .main-travellers {
+  position: relative;
+
+  background-color: @dark-blue-grey;
+  border-radius: 0 0 30px 30px;
+
+  .top-liner(-1);
+
+  @media (min-width: @tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
+}
+
+.main-travellers__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   padding-bottom: 30px;
 
-  background-color: @dark-blue-grey;
-  border-radius: 0 0 30px 30px;
+  background-image:
+    url("../../img/rounded-rectangle-blue_mobile.png"),
+    url("../../img/smolov-back-desktop@1x.png"),
+    url("../../img/rogovaya-back-mobile@1x.png");
+  background-position: -19px 39px, 152px 39px, -10px 311px;
+  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     padding-left: 75px;
     padding-right: 75px;
+    padding-bottom: 88px;
 
-    border-radius: 0 0 60px 60px;
+    background-image:
+      url("../../img/smolov-back-desktop@1x.png"),
+      url("../../img/rounded-rectangle-blue_desktop.png"),
+      url("../../img/rogovaya-back-desktop@1x.png");
+    background-position: 40px 426px, 40px 80px, 406px 80px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 133px;
-    padding-left: 60px;
+    padding-left: 131px;
     padding-right: 60px;
+    padding-bottom: 134px;
+
+    background-position: 547px 133px, 60px 68px, 191px 385px;
   }
 }
 
@@ -30,7 +55,7 @@
   width: 215px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 141px;
+    padding-top: 145px;
     margin: 0;
     margin-bottom: 58px;
     width: auto;
@@ -57,6 +82,8 @@
 
 .main-travellers__text-block-headline {
   @media (min-width: @tablet-width) {
+    margin-top: -4px;
+    margin-left: -2px;
     margin-bottom: 58px;
   }
 }
@@ -82,7 +109,12 @@
 
   list-style: none;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 80px;
+  }
+
   @media (min-width: @desktop-width) {
+    margin: 0;
     width: 630px;
   }
 }
@@ -93,6 +125,7 @@
 
   @media (min-width: @tablet-width) {
     width: 285px;
+    margin: 0;
   }
 }
 
@@ -100,7 +133,7 @@
   width: 100%;
 
   @media (min-width: @desktop-width) {
-    margin-top: -50px;
+    margin-top: -81px;
     width: 280px;
   }
 }
