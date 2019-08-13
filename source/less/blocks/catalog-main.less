@@ -1,12 +1,12 @@
-.catalog-main__container {
+.catalog-main {
+  background-color: @pale-grey;
+}
+
+.catalog-main__travellers-container {
   position: relative;
 
   display: flex;
   flex-wrap: wrap;
-
-  background-color: @pale-grey;
-
-  .top-liner(-2);
 
   @media (min-width: @desktop-width) {
     flex-wrap: nowrap;
@@ -31,6 +31,12 @@
 
   background-color: @light-gold;
   border-radius: 20px;
+
+  @media (min-width: @tablet-width) {
+    height: 550px; //TODO: Убрать. Временно для разметки
+    margin-top: 46px;
+    margin-bottom: 40px;
+  }
 
   @media (min-width: @desktop-width) {
     order: 2;

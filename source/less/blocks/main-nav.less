@@ -1,14 +1,28 @@
 .main-nav {
-  width: 320px;
-  margin: 0 auto;
+  display: none;
 
   background-color: @white;
 
   @media (min-width: @desktop-width) {
-    width: auto;
+    display: flex;
+    align-items: center;
+
     margin: 0;
 
     background-color: @dark-blue-grey-nnm;
+
+    &::before {
+      content: "";
+
+      display: block;
+
+      width: 60px;
+      height: 2px;
+      margin-right: 45px;
+
+      border-radius: 1px;
+      background-color: @white;
+    }
   }
 }
 

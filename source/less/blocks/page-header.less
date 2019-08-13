@@ -1,31 +1,60 @@
 .page-header {
+  position: relative;
+
+  background-color: @dark-blue-grey;
+
+  @media (min-width: @desktop-width) {
+    border-radius: 0 0 60px 60px;
+  }
+}
+
+.page-header__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
-  background-color: @dark-blue-grey-nnm;
-  background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-image:
+    linear-gradient(@dark-blue-grey-nnm),
+    url("../../img/traveller-illustration-mobile@1x.png"),
+    url("../../img/globe-back-mobile@1x.jpg");
+  background-position: 0 478px, 79px 223px, 0 0;
+  background-size: auto 285px, auto, auto;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/globe-back-tablet@1x.jpg");
+    background-image:
+      url("../../img/traveller-illustration-tablet@1x.png"),
+      url("../../img/globe-back-tablet@1x.jpg");
+    background-position: 285px 403px, -356px 382px; //TODO: -356px 370px, для соответствия глобуса макету
+    background-size: auto;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: flex-start;
 
-    background-image: none; // TODO: Добавить изображение
-
-    border-radius: 0 0 60px 60px;
+    background-image:
+      url("../../img/traveller-illustration-desktop@1x.png"),
+      url("../../img/globe-back-desktop@1x.jpg");
+    background-position: 604px 110px, -180px 0;
   }
 }
 
-.page-header__drop-down {
-  display: none;
+.page-header__header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    max-width: 355px;
+  }
 
   @media (min-width: @desktop-width) {
-    display: block;
+    max-width: 735px;
   }
 }
 
@@ -40,8 +69,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 200px; //Времено на ширину логотипа
-    height: 90px;
+    width: 198px; //Времено на ширину логотипа
+    height: 147px;
   }
 }
 
@@ -54,7 +83,6 @@
 }
 
 .page-header__toggle {
-  //TODO: Узнать, возможно есть смысл поставить tabindex="-1" в HTML
   position: relative;
   padding: 0;
   width: 19px;
@@ -94,26 +122,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
-
-    margin-left: 81px;
-    margin-right: 44px;
-
-    pointer-events: none;
-    cursor: default;
-
-    &::after {
-      content: none;
-    }
-
-    &::before {
-      top: 9px;
-
-      width: 60px;
-      height: 2px;
-
-      border-radius: 2px;
-    }
+    display: none;
   }
 }
 
@@ -140,7 +149,7 @@
   @media (min-width: @desktop-width) {
     width: 285px;
     margin: 0;
-    margin-top: 85px;
+    margin-top: 60px;
     padding: 0;
     padding-right: 20px;
   }
@@ -192,7 +201,7 @@
   @media (min-width: @desktop-width) {
     width: 395px;
     margin: 0;
-    margin-top: 91px;
+    margin-top: 63px;
     margin-left: 67px;
     margin-right: auto;
     padding: 0;
