@@ -19,7 +19,7 @@
   padding-bottom: 30px;
 
   background-image:
-    url("../../img/rounded-rectangle-blue_mobile.png"),
+    url("../../img/rounded-rectangle-blue_mobile.svg"),
     url("../../img/smolov-back-desktop@1x.png"),
     url("../../img/rogovaya-back-mobile@1x.png");
   background-position: -19px 39px, 152px 39px, -10px 311px;
@@ -32,7 +32,7 @@
 
     background-image:
       url("../../img/smolov-back-desktop@1x.png"),
-      url("../../img/rounded-rectangle-blue_desktop.png"),
+      url("../../img/rounded-rectangle-blue_desktop.svg"),
       url("../../img/rogovaya-back-desktop@1x.png");
     background-position: 40px 426px, 40px 80px, 406px 80px;
   }
@@ -44,6 +44,29 @@
     padding-bottom: 134px;
 
     background-position: 547px 133px, 60px 68px, 191px 385px;
+  }
+
+  @media (min-resolution: @retina-dpi) {
+    background-image:
+      url("../../img/rounded-rectangle-blue_mobile.svg"),
+      url("../../img/smolov-back-desktop@2x.png"),
+      url("../../img/rogovaya-back-mobile@2x.png");
+    background-size: 132px 132px, 143px 143px, 71px 71px;
+    background-position: -19px 39px, 152px 39px, -10px 311px;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      background-image:
+        url("../../img/smolov-back-desktop@1x.png"),
+        url("../../img/rounded-rectangle-blue_desktop.svg"),
+        url("../../img/rogovaya-back-desktop@1x.png");
+      background-size: 143px 143px, 213px 213px, 285px 285px;
+      background-position: 40px 426px, 40px 80px, 406px 80px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 547px 133px, 60px 68px, 191px 385px;
+    }
   }
 }
 
