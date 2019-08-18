@@ -36,7 +36,7 @@
 
     background-image:
       url("../../img/flags-back@1x.png"),
-      url("../../img/rounded-rectangle-grey_tablet.png");
+      url("../../img/rounded-square-grey.svg");
     background-position: 439px 79px, 40px 406px;
     background-repeat: no-repeat;
   }
@@ -51,6 +51,20 @@
     padding-bottom: 138px;
 
     background-position: 1091px 88px, 60px 89px;
+  }
+
+  @media (min-resolution: @retina-dpi) {
+    @media (min-width: @tablet-width) {
+      background-image:
+        url("../../img/flags-back@2x.png"),
+        url("../../img/rounded-square-grey.svg");
+      background-size: 289px 575px, 141px 141px;
+      background-position: 439px 79px, 40px 406px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 1091px 88px, 60px 89px;
+    }
   }
 }
 
@@ -133,11 +147,7 @@
 }
 
 .directions__item {
-  margin-bottom: 8px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
 }
 
 .directions__button {

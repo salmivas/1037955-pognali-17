@@ -44,25 +44,26 @@
   margin: 0;
 
   line-height: 0;
+}
+
+.catalog-card__image {
+  width: 100%;
+
+  border-radius: 50%;
 
   @media (min-width: @tablet-width) {
     width: 190px;
     height: 190px;
 
     background-color: @aqua-marine;
+    border-radius: 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 285px;
     height: 285px;
-  }
-}
 
-.catalog-card__image {
-  border-radius: 50%;
-
-  @media (min-width: @tablet-width) {
-    border-radius: 20px;
+    border-radius: initial;
   }
 }
 
@@ -241,7 +242,7 @@
 
   width: 45px;
   height: 45px;
-  padding-top: 13px;
+  padding-top: 10px;
 
   border-radius: 50%;
 
