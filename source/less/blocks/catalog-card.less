@@ -22,8 +22,6 @@
   @media (min-width: @desktop-width) {
     padding: 0;
 
-    overflow: hidden;
-
     &::before {
       content: "";
 
@@ -44,26 +42,36 @@
   margin: 0;
 
   line-height: 0;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-radius: 20px 0 0 20px;
+  }
 }
 
 .catalog-card__image {
-  width: 100%;
+  width: 70px;
+  height: 70px;
 
-  border-radius: 50%;
+  transition: transform 0.5s ease;
 
   @media (min-width: @tablet-width) {
     width: 190px;
     height: 190px;
 
     background-color: @aqua-marine;
-    border-radius: 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 285px;
     height: 285px;
-
-    border-radius: initial;
   }
 }
 
@@ -130,12 +138,6 @@
     }
   }
 
-  &--offline {
-    &::before {
-      background-color: @salmon;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     width: auto;
     margin: 0;
@@ -144,6 +146,20 @@
 
     font-size: 30px;
     line-height: 30px;
+  }
+
+  &--offline {
+    &::before {
+      background-color: @salmon;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -219,6 +235,10 @@
 }
 
 .catalog-card__transportation-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 33px;
   height: 33px;
 
@@ -229,11 +249,35 @@
     width: 29px;
     height: 29px;
     margin-bottom: 2px;
+
+    background-color: transparent;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
     margin-right: 4px;
+  }
+}
+
+.catalog-card__transportation-picture {
+  @media (min-width: @tablet-width) {
+    height: 21px;
+
+    &--plane {
+      width: 19px;
+    }
+
+    &--bus {
+      width: 17px;
+    }
+
+    &--bycicle {
+      width: 24px;
+    }
+
+    &--afoot {
+      width: 20px;
+    }
   }
 }
 
@@ -356,15 +400,26 @@
   flex-shrink: 0;
   width: 100%;
 
-  padding-top: 11px;
-  padding-bottom: 7px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
   @media (min-width: @tablet-width) {
     width: auto;
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     padding-left: 31px;
     padding-right: 33px;
+  }
+
+  &:hover,
+  &:active {
+    background-color: @mango-three;
+  }
+
+  &:active {
+    & * {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -382,7 +437,9 @@
 }
 
 .catalog-card__like-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 31px;
   height: 31px;
@@ -393,6 +450,56 @@
   @media (min-width: @tablet-width) {
     width: 50px;
     height: 50px;
+  }
+
+  & .catalog-card__like-image {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    background-color: @pale-grey-dark;
+
+    & .catalog-card__like-image {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    & .catalog-card__like-image {
+      opacity: 0.1;
+    }
+  }
+
+  &--active {
+    background-color: @beige;
+
+    & .catalog-card__like-image {
+      opacity: 1;
+    }
+
+    &:hover {
+      background-color: @beige-hover;
+
+      & .catalog-card__like-image {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      & .catalog-card__like-image {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.catalog-card__like-image {
+  width: 13px;
+  height: 11px;
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 17px;
   }
 }
 

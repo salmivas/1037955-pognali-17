@@ -8,7 +8,9 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 45px;
   height: 45px;
@@ -17,10 +19,52 @@
 
   &--footer {
     background-color: @light-gold;
+
+    &:hover {
+      background-color: @mango-three;
+    }
+
+    &:active {
+      & .social__icon {
+        opacity: 0.3;
+      }
+    }
   }
 
   @media (min-width: @tablet-width) {
     width: 60px;
     height: 60px;
+  }
+}
+
+.social__icon {
+  &--facebook {
+    width: 11px;
+    height: 21px;
+
+    @media (min-width: @tablet-width) {
+      width: 14px;
+      height: 28px;
+    }
+  }
+
+  &--vk {
+    width: 23px;
+    height: 12px;
+
+    @media (min-width: @tablet-width) {
+      width: 31px;
+      height: 16px;
+    }
+  }
+
+  &--instagram {
+    width: 18px;
+    height: 18px;
+
+    @media (min-width: @tablet-width) {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

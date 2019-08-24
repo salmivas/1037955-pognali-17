@@ -288,7 +288,10 @@
 }
 
 .page-header__item {
-  display: block;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
 
   width: 40px;
   height: 40px;
@@ -302,7 +305,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
+    display: flex;
 
     width: 50px;
     height: 50px;
@@ -312,10 +315,20 @@
 
   &--call {
     background-color: @mango-two;
+
+    &:hover,
+    &:active {
+      background-color: @mango-four;
+    }
   }
 
   &--email {
     background-color: @mango-three;
+
+    &:hover,
+    &:active {
+      background-color: @mango-two;
+    }
   }
 
   &--login {
@@ -331,6 +344,17 @@
 
       line-height: 50px;
       border-radius: 25px;
+    }
+
+    &:hover,
+    &:active {
+      background-color: @mango-three;
+    }
+  }
+
+  &:active {
+    & * {
+      opacity: 0.3;
     }
   }
 }

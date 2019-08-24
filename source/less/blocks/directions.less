@@ -135,6 +135,28 @@
 
   list-style: none;
 
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 117px;
+    width: 270px;
+    height: 50px;
+    background-image: linear-gradient(to bottom, @pale-grey-10, @pale-grey 90%);
+    z-index: 1;
+
+    @media (min-width: @tablet-width) {
+      bottom: 206px;
+      height: 65px;
+      width: 620px;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: 148px;
+      width: 560px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 100%;
     margin-bottom: 37px;
@@ -160,5 +182,9 @@
 
     width: 274px;
     margin-left: 174px;
+
+    & img {
+      margin-left: 46px;
+    }
   }
 }
