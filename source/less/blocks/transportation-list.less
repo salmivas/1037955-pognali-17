@@ -9,3 +9,61 @@
   line-height: 0;
   list-style: none;
 }
+
+.transportation-list__transportation-picture {
+  &--inactive {
+    opacity: 0.15;
+  }
+}
+
+.transportation-list__transportation-icon {
+  position: relative;
+
+  &:hover {
+    & .transportation-list__tooltype {
+      display: block;
+    }
+  }
+}
+
+.transportation-list__tooltype {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0;
+  margin-top: 15px;
+  padding: 0 23px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  font-size: 20px;
+  line-height: 20px;
+
+  background-color: @dark-blue-grey-four;
+  border-radius: 4px;
+
+  z-index: 1;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+
+    width: 11px;
+    height: 11px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: inherit;
+    transform: rotate(45deg);
+
+    z-index: 1;
+  }
+}

@@ -92,6 +92,17 @@
 
     border-bottom: 1px solid @light-gold;
   }
+
+  &:hover {
+    color: @mango-five;
+    border-color: @mango-five;
+  }
+
+  &:active {
+    color: @mango-five;
+    border-color: @mango-five;
+    opacity: 0.3;
+  }
 }
 
 .registration__form {
@@ -101,9 +112,15 @@
   height: 62px;
   margin-bottom: 29px;
 
+  background-color: @white;
+  border-radius: 10px;
+
   @media (min-width: @tablet-width) {
     height: 81px;
     margin-bottom: 59px;
+
+    background-color: inherit;
+    border-radius: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -112,6 +129,8 @@
 }
 
 .registration__email {
+  position: relative;
+
   width: 100%;
   padding-top: 21px;
   padding-bottom: 21px;
@@ -138,10 +157,32 @@
 
     border-radius: 20px 0 0 20px;
   }
+
+  &:hover {
+    background-color: @pale-grey;
+
+    &::placeholder {
+      color: @greyish-brown-50;
+    }
+  }
+
+  &:active {
+    color: @white;
+
+    background-color: @dark-blue-grey;
+    border: 4px solid white;
+  }
+
+  &:invalid {
+    color: @red;
+
+    background-color: @rose;
+  }
 }
 
 .registration__button {
   flex-shrink: 0;
+  justify-content: center;
 
   width: 60px;
   height: 100%;
@@ -149,7 +190,7 @@
   padding: 0;
 
   border-style: none;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
 
   @media (min-width: @tablet-width) {
     width: 82px;
@@ -158,7 +199,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    justify-content: space-between;
+
     width: 324px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
 
@@ -167,8 +212,6 @@
 
   @media (min-width: @desktop-width) {
     display: inline;
-
-    padding-left: 37px;
   }
 }
 
@@ -218,27 +261,4 @@
 .registration__contact {
   display: flex;
   align-items: center;
-
-  &::before {
-    content: "";
-
-    height: 45px;
-    width: 45px;
-    margin-right: 16px;
-
-    border-radius: 50%;
-    background-color: @dark-blue-grey-three;
-
-    @media (min-width: @tablet-width) {
-      height: 67px;
-      width: 67px;
-      margin-right: 25px;
-    }
-
-    @media (min-width: @desktop-width) {
-      height: 90px;
-      width: 90px;
-      margin-right: 30px;
-    }
-  }
 }

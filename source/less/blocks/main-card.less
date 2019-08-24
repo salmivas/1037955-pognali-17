@@ -1,7 +1,6 @@
 .main-card {
   background-color: @white;
   border-radius: 10px;
-  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     border-radius: 20px;
@@ -15,9 +14,13 @@
 }
 
 .main-card__person-image {
+  border-radius: 10px 10px 0 0;
+
   @media (min-width: @tablet-width) {
     width: 285px;
     height: 285px;
+
+    border-radius: 20px 20px 0 0;
   }
 }
 
@@ -33,6 +36,8 @@
 
   border-radius: 50%;
   background-color: @black-60;
+
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     top: 23px;
@@ -89,6 +94,11 @@
 }
 
 .main-card__level-stroke {
+  fill: none;
+  stroke: @mango-three;
+  stroke-width: 3px;
+  stroke-linecap: round;
+
   &--firsova {
     .progress-meter(29, 96);
   }
@@ -121,15 +131,66 @@
 }
 
 .main-card__country {
+  position: relative;
+
   margin-left: 9px;
   margin-right: 9px;
 
   line-height: 0;
+
+  &:hover {
+    & .main-card__country-tooltype {
+      display: block;
+    }
+  }
 }
 
 .main-card__country-flag {
   width: 35px;
   height: 24px;
+}
+
+.main-card__country-tooltype {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0;
+  margin-top: 15px;
+  padding: 0 23px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  background-color: @dark-blue-grey-four;
+  border-radius: 4px;
+
+  z-index: 1;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+
+    width: 11px;
+    height: 11px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: inherit;
+    transform: rotate(45deg);
+
+    z-index: 1;
+  }
 }
 
 .main-card__user-name {
@@ -165,6 +226,14 @@
     &::before {
       background-color: @salmon;
     }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {

@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали, каталог</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header catalog-header">
       <div class="page-header__container catalog-header__container container">
         <div class="page-header__header-container">
           <a class="page-header__logo catalog-header__logo" href="index.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp 2x">
+              <source type="image/webp" src="img/logo-mobile-white@1x.webp" srcset="img/logo-mobile-white@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
               <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?" class="page-header__logo-image" width="100" height="19">
@@ -60,22 +66,26 @@
         <div class="catalog-header__wrapper">
           <h1 class="catalog-header__title">Попутчики</h1>
           <a href="index.html" class="catalog-header__main-link">На главную
-            <img class="catalog-header__tomain" src="http://placehold.it/32x16" alt="На главную" width="32" height="16">
+            <img class="catalog-header__tomain" src="img/return.svg" alt="На главную" width="32" height="16">
           </a>
         </div>
         <ul class="page-header__button-list catalog-header__button-list">
           <li class="page-header__button-item">
             <a href="#" class="page-header__item page-header__item--call">
+              <img src="img/topmenu-phone.svg" alt="Авторизация" width="18px" height="18px">
               <span class="visually-hidden">Позвонить</span>
             </a>
           </li>
           <li class="page-header__button-item">
             <a href="#" class="page-header__item page-header__item--email">
+              <img src="img/topmenu-mail.svg" alt="Авторизация" width="18px" height="18px">
               <span class="visually-hidden">Написать</span>
             </a>
           </li>
           <li class="page-header__button-item page-header__button-item--login">
-            <a href="login.html" class="oval-button page-header__item page-header__item--login">Авторизация</a>
+            <a href="login.html" class="oval-button page-header__item page-header__item--login">
+              <span>Авторизация</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -99,6 +109,9 @@
               <!-- 1 -->
               <a href="#" class="catalog-card__image-link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 760px)" srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp 2x">
+                  <source type="image/webp" src="img/firsova-mobile@1x.webp" srcset="img/firsova-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@2x.jpg 2x">
                   <source media="(min-width: 760px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg 2x">
                   <img class="catalog-card__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова" width="70" height="70">
@@ -111,11 +124,23 @@
               </div>
               <!-- 3 -->
               <div class="catalog-card__transport-level-wrapper">
-                <ul class="catalog-card__transportation-list">
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
+                <ul class="transportation-list catalog-card__transportation-list">
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class="transportation-list__transportation-picture catalog-card__transportation-picture--plane" src="img/plane.svg" alt="Самолёт" width="14" height="16" aria-label="На самолёте">
+                    <p class="transportation-list__tooltype">Авиаперелёт</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture transportation-list__transportation-picture--inactive catalog-card__transportation-picture--bus" src="img/bus.svg" alt="Автобус" width="13" height="16" aria-label="На автобусе">
+                    <p class="transportation-list__tooltype">Автотранспорт</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture transportation-list__transportation-picture--inactive catalog-card__transportation-picture--bycicle" src="img/bike.svg" alt="Велосипед" width="19" height="17" aria-label="На велосипеде">
+                    <p class="transportation-list__tooltype">Велосипед</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture transportation-list__transportation-picture--inactive catalog-card__transportation-picture--afoot" src="img/run.svg" alt="Пешком" width="15" height="17" aria-label="Пешком">
+                    <p class="transportation-list__tooltype">Пешком</p>
+                  </li>
                 </ul>
                 <div class="catalog-card__level">
                   <svg class="catalog-card__level-circle" viewbox="0 0 65 65" width="45" height="45">
@@ -127,9 +152,13 @@
               </div>
               <!-- 4 -->
               <div class="catalog-card__likes-wrapper">
-                <a href="response-page.html" class="oval-button catalog-card__button">Позвать!</a>
+                <a href="response-page.html" class="oval-button catalog-card__button">
+                  <span>Позвать!</span>
+                </a>
                 <div class="catalog-card__likes">
-                  <a class="catalog-card__like-button catalog-card__like-button--active"></a>
+                  <a class="catalog-card__like-button catalog-card__like-button--active">
+                    <img class="catalog-card__like-image" src="img/heart-active.svg" alt="Понравилось" width="13" height="11" aria-label="Понравилось">
+                  </a>
                   <p class="catalog-card__likes-count">1,5 М</p>
                 </div>
               </div>
@@ -138,15 +167,15 @@
                 <h3 class="catalog-card__item-headline">хочет посетить:</h3>
                 <ul class="catalog-card__country-list">
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Шри-Ланка" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-sri-lanka.svg" alt="Шри-Ланка" width="26" height="18">
                     <p class="catalog-card__country-name">Шри-Ланка</p>
                   </li>
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Тайланд" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-thailand.svg" alt="Тайланд" width="26" height="18">
                     <p class="catalog-card__country-name">Тайланд</p>
                   </li>
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Сейшелы" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-seychelles.svg" alt="Сейшелы" width="26" height="18">
                     <p class="catalog-card__country-name">Сейшелы</p>
                   </li>
                 </ul>
@@ -161,6 +190,9 @@
             <li class="catalog-card catalog-travellers__item">
               <a href="#" class="catalog-card__image-link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 760px)" srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp 2x">
+                  <source type="image/webp" src="img/demin-mobile@1x.webp" srcset="img/demin-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
                   <source media="(min-width: 760px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
                   <img class="catalog-card__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Петя Демин" width="70" height="70">
@@ -171,11 +203,23 @@
                 <p class="catalog-card__tag-list">#бургер #бар #футбол #концерт #крафт</p>
               </div>
               <div class="catalog-card__transport-level-wrapper">
-                <ul class="catalog-card__transportation-list">
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
+                <ul class="transportation-list catalog-card__transportation-list">
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class="transportation-list__transportation-picture catalog-card__transportation-picture--plane" src="img/plane.svg" alt="Самолёт" width="14" height="16" aria-label="На самолёте">
+                    <p class="transportation-list__tooltype">Авиаперелёт</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture catalog-card__transportation-picture--bus" src="img/bus.svg" alt="Автобус" width="13" height="16" aria-label="На автобусе">
+                    <p class="transportation-list__tooltype">Автотранспорт</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture transportation-list__transportation-picture--inactive catalog-card__transportation-picture--bycicle" src="img/bike.svg" alt="Велосипед" width="19" height="17" aria-label="На велосипеде">
+                    <p class="transportation-list__tooltype">Велосипед</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture catalog-card__transportation-picture--afoot" src="img/run.svg" alt="Пешком" width="15" height="17" aria-label="Пешком">
+                    <p class="transportation-list__tooltype">Пешком</p>
+                  </li>
                 </ul>
                 <div class="catalog-card__level">
                   <svg class="catalog-card__level-circle" viewbox="0 0 65 65">
@@ -186,9 +230,13 @@
                 </div>
               </div>
               <div class="catalog-card__likes-wrapper">
-                <a href="response-page.html" class="oval-button catalog-card__button">Позвать!</a>
+                <a href="response-page.html" class="oval-button catalog-card__button">
+                  <span>Позвать!</span>
+                </a>
                 <div class="catalog-card__likes">
-                  <a class="catalog-card__like-button catalog-card__like-button--active"></a>
+                  <a class="catalog-card__like-button">
+                    <img class="catalog-card__like-image" src="img/heart.svg" alt="Не понравилось" width="13" height="11" aria-label="Не понравилось">
+                  </a>
                   <p class="catalog-card__likes-count">150</p>
                 </div>
               </div>
@@ -196,11 +244,11 @@
                 <h3 class="catalog-card__item-headline">хочет посетить:</h3>
                 <ul class="catalog-card__country-list">
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Бельгия" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-belgium.svg" alt="Бельгия" width="26" height="18">
                     <p class="catalog-card__country-name">Бельгия</p>
                   </li>
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Чехия" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-czech.svg" alt="Чехия" width="26" height="18">
                     <p class="catalog-card__country-name">Чехия</p>
                   </li>
                 </ul>
@@ -213,6 +261,9 @@
             <li class="catalog-card catalog-travellers__item">
               <a href="#" class="catalog-card__image-link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 760px)" srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp 2x">
+                  <source type="image/webp" src="img/smolov-mobile@1x.webp" srcset="img/smolov-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@2x.jpg 2x">
                   <source media="(min-width: 760px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg 2x">
                   <img class="catalog-card__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Марк Смолов" width="70" height="70">
@@ -223,11 +274,23 @@
                 <p class="catalog-card__tag-list">#рэп #тату #хайпбист #кроссовки #суприм</p>
               </div>
               <div class="catalog-card__transport-level-wrapper">
-                <ul class="catalog-card__transportation-list">
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
+                <ul class="transportation-list catalog-card__transportation-list">
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class="transportation-list__transportation-picture catalog-card__transportation-picture--plane" src="img/plane.svg" alt="Самолёт" width="14" height="16" aria-label="На самолёте">
+                    <p class="transportation-list__tooltype">Авиаперелёт</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture transportation-list__transportation-picture--inactive catalog-card__transportation-picture--bus" src="img/bus.svg" alt="Автобус" width="13" height="16" aria-label="На автобусе">
+                    <p class="transportation-list__tooltype">Автотранспорт</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture catalog-card__transportation-picture--bycicle" src="img/bike.svg" alt="Велосипед" width="19" height="17" aria-label="На велосипеде">
+                    <p class="transportation-list__tooltype">Велосипед</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture transportation-list__transportation-picture--inactive catalog-card__transportation-picture--afoot" src="img/run.svg" alt="Пешком" width="15" height="17" aria-label="Пешком">
+                    <p class="transportation-list__tooltype">Пешком</p>
+                  </li>
                 </ul>
                 <div class="catalog-card__level">
                   <svg class="catalog-card__level-circle" viewbox="0 0 65 65">
@@ -238,9 +301,13 @@
                 </div>
               </div>
               <div class="catalog-card__likes-wrapper">
-                <a href="response-page.html" class="oval-button catalog-card__button">Позвать!</a>
+                <a href="response-page.html" class="oval-button catalog-card__button">
+                  <span>Позвать!</span>
+                </a>
                 <div class="catalog-card__likes">
-                  <a class="catalog-card__like-button catalog-card__like-button--active"></a>
+                  <a class="catalog-card__like-button">
+                    <img class="catalog-card__like-image" src="img/heart.svg" alt="Не понравилось" width="13" height="11" aria-label="Не понравилось">
+                  </a>
                   <p class="catalog-card__likes-count">1700</p>
                 </div>
               </div>
@@ -248,15 +315,15 @@
                 <h3 class="catalog-card__item-headline">хочет посетить:</h3>
                 <ul class="catalog-card__country-list">
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="США" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-usa.svg" alt="США" width="26" height="18">
                     <p class="catalog-card__country-name">США</p>
                   </li>
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Австралия" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-australia.svg" alt="Австралия" width="26" height="18">
                     <p class="catalog-card__country-name">Австралия</p>
                   </li>
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Доминикана" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-dominica.svg" alt="Доминикана" width="26" height="18">
                     <p class="catalog-card__country-name">Доминикана</p>
                   </li>
                 </ul>
@@ -269,6 +336,9 @@
             <li class="catalog-card catalog-travellers__item">
               <a href="#" class="catalog-card__image-link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 760px)" srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp 2x">
+                  <source type="image/webp" src="img/rogovaya-mobile@1x.webp" srcset="img/rogovaya-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@2x.jpg 2x">
                   <source media="(min-width: 760px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg 2x">
                   <img class="catalog-card__image" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая" width="70" height="70">
@@ -279,11 +349,23 @@
                 <p class="catalog-card__tag-list">#образование #карьера #учеба #линкедин</p>
               </div>
               <div class="catalog-card__transport-level-wrapper">
-                <ul class="catalog-card__transportation-list">
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
-                  <li class="catalog-card__transportation-icon"></li>
+                <ul class="transportation-list catalog-card__transportation-list">
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class="transportation-list__transportation-picture catalog-card__transportation-picture--plane" src="img/plane.svg" alt="Самолёт" width="14" height="16" aria-label="На самолёте">
+                    <p class="transportation-list__tooltype">Авиаперелёт</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture catalog-card__transportation-picture--bus" src="img/bus.svg" alt="Автобус" width="13" height="16" aria-label="На автобусе">
+                    <p class="transportation-list__tooltype">Автотранспорт</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture transportation-list__transportation-picture--inactive catalog-card__transportation-picture--bycicle" src="img/bike.svg" alt="Велосипед" width="19" height="17" aria-label="На велосипеде">
+                    <p class="transportation-list__tooltype">Велосипед</p>
+                  </li>
+                  <li class="transportation-list__transportation-icon catalog-card__transportation-icon">
+                    <img class=" transportation-list__transportation-picture transportation-list__transportation-picture--inactive catalog-card__transportation-picture--afoot" src="img/run.svg" alt="Пешком" width="15" height="17" aria-label="Пешком">
+                    <p class="transportation-list__tooltype">Пешком</p>
+                  </li>
                 </ul>
                 <div class="catalog-card__level">
                   <svg class="catalog-card__level-circle" viewbox="0 0 65 65">
@@ -294,9 +376,13 @@
                 </div>
               </div>
               <div class="catalog-card__likes-wrapper">
-                <a href="response-page.html" class="oval-button catalog-card__button">Позвать!</a>
+                <a href="response-page.html" class="oval-button catalog-card__button">
+                  <span>Позвать!</span>
+                </a>
                 <div class="catalog-card__likes">
-                  <a class="catalog-card__like-button catalog-card__like-button--active"></a>
+                  <a class="catalog-card__like-button">
+                    <img class="catalog-card__like-image" src="img/heart.svg" alt="Не понравилось" width="13" height="11" aria-label="Не понравилось">
+                  </a>
                   <p class="catalog-card__likes-count">23</p>
                 </div>
               </div>
@@ -304,11 +390,11 @@
                 <h3 class="catalog-card__item-headline">хочет посетить:</h3>
                 <ul class="catalog-card__country-list">
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Великобритания" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-united-kingdom.svg" alt="Великобритания" width="26" height="18">
                     <p class="catalog-card__country-name">Великобритания</p>
                   </li>
                   <li class="catalog-card__country">
-                    <img class="catalog-card__country-flag" src="http://placehold.it/150x100" alt="Германия" width="26" height="18">
+                    <img class="catalog-card__country-flag" src="img/flag-germany.svg" alt="Германия" width="26" height="18">
                     <p class="catalog-card__country-name">Германия</p>
                   </li>
                 </ul>
@@ -320,30 +406,38 @@
             </li>
           </ul>
           <a href="new-fellow-travellers.html" class="catalog-main__show-more">
-            <img class="catalog-main__more-button" src="img/show-more-plus.svg" alt="Показать ещё" width="15" height="15">
-            Показать ещё
+            <img class="catalog-main__more-button" src="img/show-more-plus.svg" alt="Показать ещё" width="18" height="18">
+            <span>Показать ещё</span>
           </a>
           <ul class="catalog-main__pagination-list">
             <li class="catalog-main__sheet-item">
-              <a href="#" class="catalog-main__sheet-number catalog-main__sheet-number--active">1</a>
+              <a href="#" class="catalog-main__sheet-number catalog-main__sheet-number--active">
+                <span>1</span>
+              </a>
             </li>
             <li class="catalog-main__sheet-item">
-              <a href="#" class="catalog-main__sheet-number">2</a>
+              <a href="#" class="catalog-main__sheet-number">
+                <span>2</span>
+              </a>
             </li>
             <li class="catalog-main__sheet-item">
-              <a href="#" class="catalog-main__sheet-number">3</a>
+              <a href="#" class="catalog-main__sheet-number">
+                <span>3</span>
+              </a>
             </li>
             <li class="catalog-main__sheet-item">
-              <a href="#" class="catalog-main__sheet-number">4</a>
+              <a href="#" class="catalog-main__sheet-number">
+                <span>4</span>
+              </a>
             </li>
             <li class="catalog-main__arrow catalog-main__arrow--backward">
-              <a href="#" class="catalog-main__backward-link">
-                <img src="img/triangle-arrow-left.svg" alt="" height="20" width="10" aria-label="Показать предыдущую страницу">
+              <a href="#" class="catalog-main__arrow-link">
+                <img class="catalog-main__arrow-picture" src="img/triangle-arrow-left.svg" alt="" height="20" width="10" aria-label="Показать предыдущую страницу">
               </a>
             </li>
             <li class="catalog-main__arrow catalog-main__arrow--forward">
-              <a href="#" class="catalog-main__forward-link">
-                <img src="img/triangle-arrow-right.svg" alt="" height="20" width="10" aria-label="Показать следующую страницу">
+              <a href="#" class="catalog-main__arrow-link">
+                <img class="catalog-main__arrow-picture" src="img/triangle-arrow-right.svg" alt="" height="20" width="10" aria-label="Показать следующую страницу">
               </a>
             </li>
           </ul>
@@ -352,32 +446,46 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container container">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
-          <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" class="page-footer__logo-image" width="100" height="19">
+        <a class="page-footer__logo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" src="img/logo-mobile-blue@1x.webp" srcset="img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" class="page-footer__logo-image" width="100" height="19">
+          </picture>
         </a>
         <ul class="social page-footer__social">
           <li class="social__item">
             <a href="#" class="social__link social__link--footer">
               <span class="visually-hidden">Facebook</span>
+              <svg class="social__icon socal__icon--facebook" width="11" height="21">
+                <use xlink:href="#facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--footer">
               <span class="visually-hidden">Vkontakte</span>
+              <svg class="social__icon social__icon--vk" width="23" height="12">
+                <use xlink:href="#vk"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--footer">
               <span class="visually-hidden">Instagram</span>
+              <svg class="social__icon social__icon--instagram" width="18" height="18">
+                <use xlink:href="#instagram"></use>
+              </svg>
             </a>
           </li>
         </ul>
-        <div class="page-footer__copyright-wrapper">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <p class="page-footer__copyright-text">Разработано</p>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML-Academy" aria-label="Логотип HTML-Academy">
-          </a>
-        </div>
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML-Academy" aria-label="Логотип HTML-Academy">
+        </a>
       </div>
     </footer>
   </body>

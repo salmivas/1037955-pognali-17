@@ -117,6 +117,8 @@
 }
 
 .country-card__visitors {
+  display: flex;
+  align-items: center;
   order: 1;
 
   margin: 0;
@@ -136,6 +138,21 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.country-card__visitors-image {
+  width: 11px;
+  height: 11px;
+  margin-right: 6px;
+
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    width: 21px;
+    height: 20px;
+
+    margin-right: 9px;
   }
 }
 

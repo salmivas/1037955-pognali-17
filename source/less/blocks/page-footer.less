@@ -51,20 +51,23 @@
 }
 
 .page-footer__logo {
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
 
   margin-bottom: 38px;
-
   line-height: 0;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 157px; //TODO: Для сетки, убрать.
     margin: 0;
   }
 }
 
-.page-footer__copyright-wrapper {
+.page-footer__logo-image {
+  width: auto;
+}
+
+.page-footer__copyright-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -79,6 +82,12 @@
 
     border: none;
   }
+
+  &:hover {
+    & * {
+      opacity: 0.6;
+    }
+  }
 }
 
 .page-footer__copyright-text {
@@ -91,17 +100,9 @@
   color: @greyish-brown;
 
   @media (min-width: @tablet-width) {
+    margin-right: 24px;
+
     font-size: 20px;
     line-height: 24px;
-  }
-}
-
-.page-footer__copyright-link {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 24px;
   }
 }
