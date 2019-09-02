@@ -306,57 +306,70 @@
                 <p class="plan-steps__step-description"><span class="plan-steps__tricky-wrapper">Укажите предпочтительное количество попутчиков, которых</span> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 <ul class="first-step__input-list">
                   <li class="first-step__input-item first-step__input-item--search-travellers">
-                    <label class="first-step__text-label" for="travellers-number">
-                      ищу попутчиков:
-                      <span>чел.</span>
-                    </label>
-                    <button class="first-step__del-button first-step__del-button--traveller" type="button">
-                      Удалить попутчика
-                      <picture>
-                        <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
-                        <img class="first-step__minus" src="img/qty-minus-mobile.svg" alt="Удалить" width="14" height="2">
-                      </picture>
-                    </button>
-                    <button class="first-step__add-button first-step__add-button--traveller" type="button">
-                      Добавить попутчика
-                      <picture>
-                        <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
-                        <img class="first-step__plus" src="img/qty-plus-mobile.svg" alt="Добавить" width="14" height="14">
-                      </picture>
-                    </button>
-                    <input class="first-step__text-input" type="text" id="travellers-number" name="travellers-number" value="2">
+                    <label class="first-step__text-label" for="travellers-number">ищу попутчиков:</label>
+                    <span class="first-step__text-unit">чел.</span>
+                    <div class="first-step__text-wrapper">
+                      <button class="first-step__del-button first-step__del-button--traveller" type="button">
+                        Удалить попутчика
+                        <picture>
+                          <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
+                          <img class="first-step__minus" src="img/qty-minus-mobile.svg" alt="Удалить" width="14" height="2">
+                        </picture>
+                      </button>
+                      <button class="first-step__add-button first-step__add-button--traveller" type="button">
+                        Добавить попутчика
+                        <picture>
+                          <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
+                          <img class="first-step__plus" src="img/qty-plus-mobile.svg" alt="Добавить" width="14" height="14">
+                        </picture>
+                      </button>
+                      <input class="first-step__text-input" type="text" id="travellers-number" name="travellers-number" value="2">
+                    </div>
                   </li>
                   <li class="first-step__input-item first-step__input-item--trip-duration">
-                    <label class="first-step__text-label" for="duration-days">
-                      длительность:
-                      <span>дн.</span>
-                    </label>
-                    <button class="first-step__del-button first-step__del-button--day" type="button">
-                      Удалить день
-                      <picture>
-                        <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
-                        <img class="first-step__minus" src="img/qty-minus-mobile.svg" alt="Удалить" width="14" height="2">
-                      </picture>
-                    </button>
-                    <button class="first-step__add-button first-step__add-button--day" type="button">
-                      Добавить день
-                      <picture>
-                        <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
-                        <img class="first-step__plus" src="img/qty-plus-mobile.svg" alt="Добавить" width="14" height="14">
-                      </picture>
-                    </button>
-                    <input class="first-step__text-input" type="text" id="duration-days" name="duration-days" value="2">
+                    <label class="first-step__text-label" for="duration-days">длительность:</label>
+                    <span class="first-step__text-unit">дн.</span>
+                    <div class="first-step__text-wrapper">
+                      <button class="first-step__del-button first-step__del-button--day" type="button">
+                        Удалить день
+                        <picture>
+                          <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
+                          <img class="first-step__minus" src="img/qty-minus-mobile.svg" alt="Удалить" width="14" height="2">
+                        </picture>
+                      </button>
+                      <button class="first-step__add-button first-step__add-button--day" type="button">
+                        Добавить день
+                        <picture>
+                          <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
+                          <img class="first-step__plus" src="img/qty-plus-mobile.svg" alt="Добавить" width="14" height="14">
+                        </picture>
+                      </button>
+                      <input class="first-step__text-input" type="text" id="duration-days" name="duration-days" value="2">
+                    </div>
                   </li>
                   <li class="first-step__input-item first-step__input-item--children">
                     <input class="first-step__children-checkbox visually-hidden" type="checkbox" id="with-children" name="with-children" checked>
                     <label for="with-children">
-                      <div class="first-step__checkbox-form">
+                      <div class="first-step__checkbox-form" tabindex="0">
                         <img class="first-step__checkbox-tick" src="img/tick.svg" alt="Галочка" width="9" height="9">
                       </div>
                       Можно с детьми
                     </label>
                   </li>
                 </ul>
+                <div class="first-step__month-wrapper">
+                  <div class="first-step__month-switcher">
+                    <button type="button" class="first-step__month-switcher-button first-step__month-switcher-button--backward">
+                      Переключить месяц назад
+                      <img src="img/month-arrow-left.svg" alt="Переключить назад" width="9" height="17">
+                    </button>
+                    <p class="first-step__current-month">Март 2019</p>
+                    <button type="button" class="first-step__month-switcher-button first-step__month-switcher-button--forward">
+                      Переключить месяц вперёд
+                      <img src="img/month-arrow-right.svg" alt="Переключить вперёд" width="9" height="17">
+                    </button>
+                  </div>
+                </div>
               </li>
               <li class="second-step plan-steps__step plan-steps__step--second-step">
                 <h3 class="plan-steps__step-headline">
