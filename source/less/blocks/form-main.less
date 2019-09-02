@@ -1,4 +1,18 @@
-.form-main {
-  height: 500px; //TODO: Убрать. Временно для разметки
-  background-color: @pale-grey;
+.form-main__personal-info {
+  position: relative;
+  .top-liner(-1);
+  .bottom-liner(-1);
+}
+
+.form-main__my-plans,
+.form-main__add-plan {
+  position: relative;
+
+  border-radius: 30px 30px 0 0;
+
+  @media (min-width: @desktop-width) {
+    border-radius: 60px 60px 0 0;
+  }
+
+  .bottom-liner(-1);
 }

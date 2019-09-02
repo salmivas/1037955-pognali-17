@@ -12,7 +12,7 @@
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header form-header">
+    <header class="page-header form-header page-header__menu--closed page-header__menu--nojs">
       <div class="page-header__container form-header__container container">
         <div class="page-header__header-container">
           <a class="page-header__logo form-header__logo" href="index.html">
@@ -22,14 +22,22 @@
               <source type="image/webp" src="img/logo-mobile-white@1x.webp" srcset="img/logo-mobile-white@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
-              <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?" class="page-header__logo-image" width="100" height="19">
+              <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?" class="page-header__logo-image page-header__logo-image--white" width="100" height="19">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+              <source type="image/webp" src="img/logo-mobile-blue@1x.webp" srcset="img/logo-mobile-blue@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+              <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" class="page-header__logo-image page-header__logo-image--blue" width="100" height="19">
             </picture>
           </a>
           <button class="page-header__toggle" type="button">Открыть/Закрыть</button>
           <nav class="main-nav">
             <ul class="site-list main-nav__list">
               <li class="site-list__item">
-                <a href="index.html" class="site-list__reference">О сервисе</a>
+                <a href="#" class="site-list__reference">О сервисе</a>
               </li>
               <li class="site-list__item">
                 <a href="form.html" class="site-list__reference">Направления</a>
@@ -39,32 +47,6 @@
               </li>
             </ul>
           </nav>
-          <div class="page-header__mobile-wrapper">
-            <ul class="contacts page-header__contacts">
-              <li class="contacts__item"><a class="contacts__contact contacts__contact--phone contacts__contact--blue">8 800 555-86-28</a></li>
-              <li class="contacts__item"><a class="contacts__contact contacts__contact--email contacts__contact--blue">mail@htmlacademy.ru</a></li>
-            </ul>
-            <ul class="social page-header__social">
-              <li class="social__item social__item--transparent">
-                <a href="#" class="social__link social__link--header">
-                  <span class="visually-hidden">Facebook</span>
-                </a>
-              </li>
-              <li class="social__item social__item--transparent">
-                <a href="#" class="social__link social__link--header">
-                  <span class="visually-hidden">Vkontakte</span>
-                </a>
-              </li>
-              <li class="social__item social__item--transparent">
-                <a href="#" class="social__link social__link--header">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="form-header__wrapper">
-          <h1 class="form-header__title">Направления</h1>
         </div>
         <ul class="page-header__button-list form-header__button-list">
           <li class="page-header__button-item">
@@ -85,10 +67,343 @@
             </a>
           </li>
         </ul>
+        <div class="form-header__wrapper">
+          <h1 class="form-header__title">Направления</h1>
+        </div>
+      </div>
+      <div class="page-header__menu">
+        <div class="page-header__menu-wrapper container">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+              <source type="image/webp" src="img/logo-mobile-blue@1x.webp" srcset="img/logo-mobile-blue@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+              <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" class="page-header__logo-image page-header__logo-image--blue" width="100" height="19">
+            </picture>
+          </a>
+          <button class="page-header__menu-toggle" type="button">Открыть/Закрыть</button>
+          <ul class="page-header__menu-button-list">
+            <li class="page-header__menu-button-item">
+              <a href="#" class="page-header__menu-item page-header__menu-item--call">
+                <img src="img/topmenu-phone.svg" alt="Авторизация" width="18px" height="18px">
+                <span class="visually-hidden">Позвонить</span>
+              </a>
+            </li>
+            <li class="page-header__menu-button-item">
+              <a href="#" class="page-header__menu-item page-header__menu-item--email">
+                <img src="img/topmenu-mail.svg" alt="Авторизация" width="18px" height="18px">
+                <span class="visually-hidden">Написать</span>
+              </a>
+            </li>
+            <li class="page-header__menu-button-item page-header__menu-button-item--login">
+              <a href="login.html" class="oval-button page-header__menu-item page-header__menu-item--login">
+                <span>Авторизация</span>
+              </a>
+            </li>
+          </ul>
+          <nav class="page-header__menu-main-nav">
+            <ul class="site-list main-nav__list">
+              <li class="site-list__item">
+                <a href="#" class="site-list__reference">О сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html" class="site-list__reference">Направления</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html" class="site-list__reference">Попутчики</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts registration__contacts">
+            <li class="contacts__item registration__contact">
+              <a class="contacts__contact contacts__contact--blue">
+                <div class="contacts__image">
+                  <svg width="18" height="18">
+                    <use xlink:href="#contacts-phone"></use>
+                  </svg>
+                </div>
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="contacts__item registration__contact">
+              <a class="contacts__contact contacts__contact--blue">
+                <div class="contacts__image">
+                  <svg width="18" height="18">
+                    <use xlink:href="#contacts-mail"></use>
+                  </svg>
+                </div>
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+          <ul class="social page-header__social">
+            <li class="social__item social__item--transparent">
+              <a href="#" class="social__link social__link--header">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="socal__icon--facebook social__icon" width="11" height="21">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--transparent">
+              <a href="#" class="social__link social__link--header">
+                <span class="visually-hidden">Vkontakte</span>
+                <svg class="social__icon social__icon--vk" width="23" height="12">
+                  <use xlink:href="#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--transparent">
+              <a href="#" class="social__link social__link--header">
+                <span class="visually-hidden">Instagram</span>
+                <svg class="social__icon social__icon--instagram" width="18" height="18">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="form-main">
-
+      <form class="form-main__form" method="post" action="https://echo.htmlacademy.ru">
+        <section class="personal-info form-main__personal-info">
+          <div class="personal-info__container container">
+            <!-- 1 -->
+            <div class="personal-info__level">
+              <svg class="personal-info__level-circle" viewbox="0 0 65 65" width="100" height="100">
+                <circle class="personal-info__level-stroke personal-info__level-stroke--demin" r="31" cx="50%" cy="50%" fill="none" stroke="hsl(27, 100%, 59%)" stroke-width="2" stroke-linecap="round"></circle>
+              </svg>
+              <p class="personal-info__level-number">80</p>
+              <p class="personal-info__level-level">level</p>
+            </div>
+            <!-- 2 -->
+            <picture class="personal-info__picture">
+              <source type="image/webp" src="img/demin-tablet@2x.webp" srcset="img/demin-tablet@2x.webp 2x">
+              <img class="personal-info__image" src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x" alt="Петя Демин" width="100" height="100">
+            </picture>
+            <!-- 3 -->
+            <input class="personal-info__change-photo" id="change-photo" type="file">
+            <label class="personal-info__change-photo-button" for="change-photo">
+              <p class="personal-info__button-signature">
+                <span class="personal-info__signature-hider">Сменить</span> фото
+              </p>
+            </label>
+            <!-- 4 -->
+            <fieldset class="personal-info__fieldset personal-info__fieldset--tags">
+              <legend class="personal-info__fieldset-legend">Тэги</legend>
+              <textarea class="personal-info__fieldset-tags" id="tags" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов" required>#бургер #бар #футбол #концерт #крафт</textarea>
+            </fieldset>
+            <!-- 5 -->
+            <fieldset class="personal-info__fieldset personal-info__fieldset--transportation">
+              <legend class="personal-info__fieldset-legend">Транспорт</legend>
+              <ul class="transport-options personal-info__transport-options">
+                <li class="transport-options__transport-option transport-options__transport-option--aeroplane">
+                  <input class="transport-options__transport-checkbox visually-hidden" type="checkbox" name="transport" id="aeropnale" value="aeropnale">
+                  <label for="aeropnale">
+                    <svg width="14" height="16">
+                      <use xlink:href="#plane"></use>
+                    </svg>
+                  </label>
+                  <p class="transportation-list__tooltype">Авиаперелёт</p>
+                </li>
+                <li class="transport-options__transport-option transport-options__transport-option--ground">
+                  <input class="transport-options__transport-checkbox visually-hidden" type="checkbox" name="transport" id="ground" value="ground">
+                  <label for="ground">
+                    <svg width="13" height="16">
+                      <use xlink:href="#bus"></use>
+                    </svg>
+                  </label>
+                  <p class="transportation-list__tooltype">Автотранспорт</p>
+                </li>
+                <li class="transport-options__transport-option transport-options__transport-option--bike">
+                  <input class="transport-options__transport-checkbox visually-hidden" type="checkbox" name="transport" id="bicycle" value="bicycle" checked>
+                  <label for="bicycle">
+                    <svg width="19" height="17">
+                      <use xlink:href="#bike"></use>
+                    </svg>
+                  </label>
+                  <p class="transportation-list__tooltype">Велосипед</p>
+                </li>
+                <li class="transport-options__transport-option transport-options__transport-option--run">
+                  <input class="transport-options__transport-checkbox visually-hidden" type="checkbox" name="transport" id="afoot" value="afoot">
+                  <label for="afoot">
+                    <svg width="15" height="17">
+                      <use xlink:href="#run"></use>
+                    </svg>
+                  </label>
+                  <p class="transportation-list__tooltype">Пешком</p>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section class="my-plans form-main__my-plans">
+          <div class="my-plans__container container">
+            <h2 class="my-plans__headline">Мои планы:</h2>
+            <ul class="my-plans__plans-list">
+              <li class="my-plans__item">
+                <div class="my-plans__card-header">
+                  <p class="my-plans__card-number">1.</p>
+                  <p class="my-plans__plan-countries">Франция, Италия</p>
+                </div>
+                <div class="my-plans__card-footer">
+                  <div class="my-plans__footer-wrapper">
+                    <p class="my-plans__companions">3 попутчика</p>
+                    <p class="my-plans__trip-dates">26 мар — 29 мар</p>
+                  </div>
+                  <a href="plans-redaction.html" class="my-plans__change-plan">Изменить</a>
+                </div>
+              </li>
+              <li class="my-plans__item">
+                <div class="my-plans__card-header">
+                  <p class="my-plans__card-number">2.</p>
+                  <p class="my-plans__plan-countries">Тайланд, Индонезия</p>
+                </div>
+                <div class="my-plans__card-footer">
+                  <div class="my-plans__footer-wrapper">
+                    <p class="my-plans__companions">1 попутчик</p>
+                    <p class="my-plans__trip-dates">1 июл — 15 июл</p>
+                  </div>
+                  <a href="plans-redaction.html" class="my-plans__change-plan">Изменить</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="add-plan form-main__add-plan">
+          <div class="add-plan__container container">
+            <h2 class="add-plan__headline">
+              Добавить план:
+              <ul class="add-plan__steps">
+                <li class="add-plan__step add-plan__step--first add-plan__step--active"></li>
+                <li class="add-plan__step add-plan__step--second"></li>
+                <li class="add-plan__step add-plan__step--third"></li>
+              </ul>
+            </h2>
+            <ul class="plan-steps add-plan__plan-steps">
+              <li class="first-step plan-steps__step plan-steps__step--first-step">
+                <h3 class="plan-steps__step-headline">
+                  <p class="plan-steps__headline-number">Шаг 1.</p>
+                  <p class="plan-steps__headline-description">Даты пребывания</p>
+                </h3>
+                <ul class="plan-steps__marker-list">
+                  <li class="plan-steps__marker-item plan-steps__marker-item--dates plan-steps__marker-item--active">
+                    <div class="plan-steps__marker-dot"></div>
+                    <p class="plan-steps__marker-name">Даты</p>
+                  </li>
+                  <li class="plan-steps__marker-item plan-steps__marker-item--route">
+                    <div class="plan-steps__marker-dot"></div>
+                    <p class="plan-steps__marker-name">Маршрут</p>
+                  </li>
+                  <li class="plan-steps__marker-item plan-steps__marker-item--amusements">
+                    <div class="plan-steps__marker-dot"></div>
+                    <p class="plan-steps__marker-name">Развлечения</p>
+                  </li>
+                </ul>
+                <p class="plan-steps__step-description"><span class="plan-steps__tricky-wrapper">Укажите предпочтительное количество попутчиков, которых</span> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                <ul class="first-step__input-list">
+                  <li class="first-step__input-item first-step__input-item--search-travellers">
+                    <label class="first-step__text-label" for="travellers-number">
+                      ищу попутчиков:
+                      <span>чел.</span>
+                    </label>
+                    <button class="first-step__del-button first-step__del-button--traveller" type="button">
+                      Удалить попутчика
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
+                        <img class="first-step__minus" src="img/qty-minus-mobile.svg" alt="Удалить" width="14" height="2">
+                      </picture>
+                    </button>
+                    <button class="first-step__add-button first-step__add-button--traveller" type="button">
+                      Добавить попутчика
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
+                        <img class="first-step__plus" src="img/qty-plus-mobile.svg" alt="Добавить" width="14" height="14">
+                      </picture>
+                    </button>
+                    <input class="first-step__text-input" type="text" id="travellers-number" name="travellers-number" value="2">
+                  </li>
+                  <li class="first-step__input-item first-step__input-item--trip-duration">
+                    <label class="first-step__text-label" for="duration-days">
+                      длительность:
+                      <span>дн.</span>
+                    </label>
+                    <button class="first-step__del-button first-step__del-button--day" type="button">
+                      Удалить день
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img/qty-minus.svg">
+                        <img class="first-step__minus" src="img/qty-minus-mobile.svg" alt="Удалить" width="14" height="2">
+                      </picture>
+                    </button>
+                    <button class="first-step__add-button first-step__add-button--day" type="button">
+                      Добавить день
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
+                        <img class="first-step__plus" src="img/qty-plus-mobile.svg" alt="Добавить" width="14" height="14">
+                      </picture>
+                    </button>
+                    <input class="first-step__text-input" type="text" id="duration-days" name="duration-days" value="2">
+                  </li>
+                  <li class="first-step__input-item first-step__input-item--children">
+                    <input class="first-step__children-checkbox visually-hidden" type="checkbox" id="with-children" name="with-children" checked>
+                    <label for="with-children">
+                      <div class="first-step__checkbox-form">
+                        <img class="first-step__checkbox-tick" src="img/tick.svg" alt="Галочка" width="9" height="9">
+                      </div>
+                      Можно с детьми
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="second-step plan-steps__step plan-steps__step--second-step">
+                <h3 class="plan-steps__step-headline">
+                  <p class="plan-steps__headline-number">Шаг 2.</p>
+                  <p class="plan-steps__headline-description">Маршрут</p>
+                </h3>
+                <ul class="plan-steps__marker-list">
+                  <li class="plan-steps__marker-item plan-steps__marker-item--dates">
+                    <div class="plan-steps__marker-dot"></div>
+                    <p class="plan-steps__marker-name">Даты</p>
+                  </li>
+                  <li class="plan-steps__marker-item plan-steps__marker-item--route plan-steps__marker-item--active">
+                    <div class="plan-steps__marker-dot"></div>
+                    <p class="plan-steps__marker-name">Маршрут</p>
+                  </li>
+                  <li class="plan-steps__marker-item plan-steps__marker-item--amusements">
+                    <div class="plan-steps__marker-dot"></div>
+                    <p class="plan-steps__marker-name">Развлечения</p>
+                  </li>
+                </ul>
+                <p class="plan-steps__step-description"><span class="plan-steps__tricky-wrapper">Укажите страны, которые вы хотели по посетить.</span> Это может быть одна или сразу несколько.</p>
+              </li>
+              <li class="third-step plan-steps__step plan-steps__step--third-step">
+                <h3 class="plan-steps__step-headline">
+                  <p class="plan-steps__headline-number">Шаг 3.</p>
+                  <p class="plan-steps__headline-description">Развлечения</p>
+                </h3>
+                <ul class="plan-steps__marker-list">
+                  <li class="plan-steps__marker-item plan-steps__marker-item--dates">
+                    <div class="plan-steps__marker-dot"></div>
+                    <p class="plan-steps__marker-name">Даты</p>
+                  </li>
+                  <li class="plan-steps__marker-item plan-steps__marker-item--route">
+                    <div class="plan-steps__marker-dot"></div>
+                    <p class="plan-steps__marker-name">Маршрут</p>
+                  </li>
+                  <li class="plan-steps__marker-item plan-steps__marker-item--amusements plan-steps__marker-item--active">
+                    <div class="plan-steps__marker-dot"></div>
+                    <p class="plan-steps__marker-name">Развлечения</p>
+                  </li>
+                </ul>
+                <p class="plan-steps__step-description"><span class="plan-steps__tricky-wrapper">Наконец, расскажите о своих планах времяпровождения.</span> Можно писать в свободной форме и ставить тэги.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__container container">
@@ -134,6 +449,8 @@
         </a>
       </div>
     </footer>
+    <script src="js/scroll.js"></script>
+    <script src="js/menu_open.js"></script>
   </body>
 
 </html>

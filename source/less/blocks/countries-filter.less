@@ -11,6 +11,10 @@
   }
 }
 
+.countries-filter ul {
+  .no-list();
+}
+
 .countries-filter__headline {
   margin: 0;
   font-size: 16px;
@@ -23,5 +27,45 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+.countries-filter__countries-letter {
+  display: none;
+}
+
+.countries-filter__toggle {
+
+  &--1:checked~.countries-filter__countries .countries-filter__countries-letter--1,
+  &--2:checked~.countries-filter__countries .countries-filter__countries-letter--2,
+  &--3:checked~.countries-filter__countries .countries-filter__countries-letter--3,
+  &--4:checked~.countries-filter__countries .countries-filter__countries-letter--4,
+  &--5:checked~.countries-filter__countries .countries-filter__countries-letter--5,
+  &--6:checked~.countries-filter__countries .countries-filter__countries-letter--6,
+  &--7:checked~.countries-filter__countries .countries-filter__countries-letter--7,
+  &--8:checked~.countries-filter__countries .countries-filter__countries-letter--8,
+  &--9:checked~.countries-filter__countries .countries-filter__countries-letter--9,
+  &--10:checked~.countries-filter__countries .countries-filter__countries-letter--10,
+  &--11:checked~.countries-filter__countries .countries-filter__countries-letter--11,
+  &--12:checked~.countries-filter__countries .countries-filter__countries-letter--12,
+  &--13:checked~.countries-filter__countries .countries-filter__countries-letter--13,
+  &--14:checked~.countries-filter__countries .countries-filter__countries-letter--14,
+  &--15:checked~.countries-filter__countries .countries-filter__countries-letter--15,
+  &--16:checked~.countries-filter__countries .countries-filter__countries-letter--16,
+  &--17:checked~.countries-filter__countries .countries-filter__countries-letter--17,
+  &--18:checked~.countries-filter__countries .countries-filter__countries-letter--18,
+  &--19:checked~.countries-filter__countries .countries-filter__countries-letter--19,
+  &--20:checked~.countries-filter__countries .countries-filter__countries-letter--20,
+  &--21:checked~.countries-filter__countries .countries-filter__countries-letter--21,
+  &--22:checked~.countries-filter__countries .countries-filter__countries-letter--22,
+  &--23:checked~.countries-filter__countries .countries-filter__countries-letter--23,
+  &--24:checked~.countries-filter__countries .countries-filter__countries-letter--24,
+  &--25:checked~.countries-filter__countries .countries-filter__countries-letter--25,
+  &--26:checked~.countries-filter__countries .countries-filter__countries-letter--26,
+  &--27:checked~.countries-filter__countries .countries-filter__countries-letter--27,
+  &--28:checked~.countries-filter__countries .countries-filter__countries-letter--28,
+  &--29:checked~.countries-filter__countries .countries-filter__countries-letter--29,
+  &--30:checked~.countries-filter__countries .countries-filter__countries-letter--30 {
+    display: block;
   }
 }

@@ -1,0 +1,98 @@
+.transport-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .no-list();
+
+  * {
+    line-height: 0;
+  }
+}
+
+.transport-options__transport-option {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 33px;
+  height: 33px;
+
+  background-color: @white;
+  border-radius: 50%;
+
+  &:hover {
+    box-shadow: 0px 2px 10px 0 hsla(0, 0%, 0%, 0.08);
+
+    .transportation-list__tooltype {
+      display: block;
+    }
+  }
+
+  &:active {
+    box-shadow: none;
+    background-color: @pale-grey-two-new;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 43px;
+    height: 43px;
+
+    &--aeroplane svg {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--ground svg {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike svg {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run svg {
+      width: 20px;
+      height: 21px;
+    }
+  }
+}
+
+.transport-options__transport-checkbox {
+  &:hover~label svg {
+    fill: @dark-slate-blue-two;
+  }
+
+  &:active~label svg {
+    fill: @dark-slate-blue-two;
+    opacity: 0.3;
+  }
+
+  &:checked~label svg {
+    opacity: 0.15;
+  }
+
+  &:checked:hover~label svg {
+    opacity: 0.3;
+  }
+
+  &:checked:active~label svg {
+    opacity: 0.1;
+  }
+}

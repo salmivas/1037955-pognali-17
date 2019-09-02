@@ -1,3 +1,60 @@
 .travellers-filter {
   // TODO
 }
+
+.travellers-filter ul {
+  .no-list();
+}
+
+.travellers-filter__range-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+}
+
+.travellers-filter__bar {
+  height: 2px;
+  padding-left: 30%;
+  padding-right: 0;
+
+  background-color: @dark-slate-blue-20;
+}
+
+.travellers-filter__choosen-bar {
+  height: 2px;
+
+  background-color: @dark-slate-blue;
+}
+
+.travellers-filter__toggle {
+  position: absolute;
+
+  height: 10px;
+  width: 10px;
+
+  background-color: @dark-slate-blue;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--left {
+    top: -4px;
+    left: 30%;
+  }
+
+  &--right {
+    top: -4px;
+    right: 0;
+  }
+
+  &:hover {
+    top: -8px;
+
+    height: 17px;
+    width: 17px;
+  }
+
+  &:active {
+    box-shadow: 0px 3px 7px 0 hsla(224, 52%, 24%, 0.35);
+  }
+}

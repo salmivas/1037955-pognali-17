@@ -31,6 +31,12 @@
     }
   }
 
+  &--header {
+    .social__icon {
+      fill: @pinkish-grey-three;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 60px;
     height: 60px;
@@ -38,14 +44,10 @@
 }
 
 .social__icon {
-  &--facebook {
-    width: 11px;
-    height: 21px;
 
-    @media (min-width: @tablet-width) {
-      width: 14px;
-      height: 28px;
-    }
+  @media (min-width: @tablet-width) {
+    width: 14px;
+    height: 28px;
   }
 
   &--vk {

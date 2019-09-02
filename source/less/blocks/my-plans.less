@@ -1,0 +1,213 @@
+.my-plans {
+  color: @dark-slate-blue;
+  line-height: 1;
+
+  background-color: @pale-grey-nnm;
+}
+
+.my-plans__container {
+  position: relative;
+
+  padding-top: 27px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 28px;
+    padding-bottom: 64px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 48px;
+    padding-left: 124px;
+    padding-right: 60px;
+  }
+}
+
+.my-plans__headline {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+
+    font-size: 36px;
+    line-height: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 6px;
+    margin-bottom: 51px;
+
+    line-height: 36px;
+  }
+}
+
+.my-plans__plans-list {
+  width: 100%;
+
+  .no-list();
+}
+
+.my-plans__item {
+  padding: 24px;
+  padding-top: 23px;
+  margin-bottom: 10px;
+
+  background-color: @white;
+
+  border-radius: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-left: 44px;
+    padding-right: 40px;
+    margin-bottom: 15px;
+  }
+}
+
+.my-plans__card-header {
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+    padding-top: 39px;
+    padding-left: 39px;
+    padding-right: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    max-width: 500px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.my-plans__card-number {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: unset;
+    margin-right: 35px;
+  }
+}
+
+.my-plans__plan-countries {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 23px;
+    line-height: 23px;
+  }
+}
+
+.my-plans__card-footer {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 17px;
+    padding-right: 33px;
+    padding-left: 33px;
+    padding-bottom: 12px;
+
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    border-top: 1px solid @pale-grey-nnm;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 590px;
+    padding: 0;
+
+    border: none;
+  }
+}
+
+.my-plans__footer-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.my-plans__companions {
+  margin: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 141px;
+    margin-right: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-right: 36px;
+  }
+}
+
+.my-plans__trip-dates {
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.my-plans__change-plan {
+  color: @black-30;
+
+  &:hover {
+    color: @black-60;
+  }
+
+  &:active {
+    color: @black-10;
+  }
+}

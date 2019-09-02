@@ -12,7 +12,7 @@
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header">
+    <header class="page-header page-header__menu--closed page-header__menu--nojs">
       <div class="page-header__container container">
         <div class="page-header__header-container">
           <a class="page-header__logo">
@@ -22,7 +22,15 @@
               <source type="image/webp" src="img/logo-mobile-white@1x.webp" srcset="img/logo-mobile-white@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
-              <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?" class="page-header__logo-image" width="100" height="19">
+              <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?" class="page-header__logo-image page-header__logo-image--white" width="100" height="19">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+              <source type="image/webp" src="img/logo-mobile-blue@1x.webp" srcset="img/logo-mobile-blue@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+              <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" class="page-header__logo-image page-header__logo-image--blue" width="100" height="19">
             </picture>
           </a>
           <button class="page-header__toggle" type="button">Открыть/Закрыть</button>
@@ -39,47 +47,6 @@
               </li>
             </ul>
           </nav>
-          <div class="page-header__mobile-wrapper">
-            <ul class="contacts registration__contacts">
-              <li class="contacts__item registration__contact">
-                <a class="contacts__contact contacts__contact--yellow">
-                  <div class="contacts__image">
-                    <svg width="18" height="18">
-                      <use xlink:href="#contacts-phone"></use>
-                    </svg>
-                  </div>
-                  8 800 555-86-28
-                </a>
-              </li>
-              <li class="contacts__item registration__contact">
-                <a class="contacts__contact contacts__contact--yellow">
-                  <div class="contacts__image">
-                    <svg width="18" height="18">
-                      <use xlink:href="#contacts-mail"></use>
-                    </svg>
-                  </div>
-                  mail@htmlacademy.ru
-                </a>
-              </li>
-            </ul>
-            <ul class="social page-header__social">
-              <li class="social__item social__item--transparent">
-                <a href="#" class="social__link social__link--header">
-                  <span class="visually-hidden">Facebook</span>
-                </a>
-              </li>
-              <li class="social__item social__item--transparent">
-                <a href="#" class="social__link social__link--header">
-                  <span class="visually-hidden">Vkontakte</span>
-                </a>
-              </li>
-              <li class="social__item social__item--transparent">
-                <a href="#" class="social__link social__link--header">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
         <h1 class="page-header__title">В путешествие с крутыми попутчиками!</h1>
         <ul class="page-header__button-list">
@@ -120,6 +87,107 @@
             <p class="steps__list-desc steps__list-desc--fourth">Путешествуйте<br> вместе!</p>
           </li>
         </ul>
+      </div>
+      <div class="page-header__menu">
+        <div class="page-header__menu-wrapper container">
+          <!-- 1 -->
+          <a class="page-header__logo">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+              <source type="image/webp" src="img/logo-mobile-blue@1x.webp" srcset="img/logo-mobile-blue@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+              <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" class="page-header__logo-image page-header__logo-image--blue" width="100" height="19">
+            </picture>
+          </a>
+          <!-- 2 -->
+          <button class="page-header__menu-toggle" type="button">Открыть/Закрыть</button>
+          <!-- 3 -->
+          <ul class="page-header__menu-button-list">
+            <li class="page-header__menu-button-item">
+              <a href="#" class="page-header__menu-item page-header__menu-item--call">
+                <img src="img/topmenu-phone.svg" alt="Авторизация" width="18px" height="18px">
+                <span class="visually-hidden">Позвонить</span>
+              </a>
+            </li>
+            <li class="page-header__menu-button-item">
+              <a href="#" class="page-header__menu-item page-header__menu-item--email">
+                <img src="img/topmenu-mail.svg" alt="Авторизация" width="18px" height="18px">
+                <span class="visually-hidden">Написать</span>
+              </a>
+            </li>
+            <li class="page-header__menu-button-item page-header__menu-button-item--login">
+              <a href="login.html" class="oval-button page-header__menu-item page-header__menu-item--login">
+                <span>Авторизация</span>
+              </a>
+            </li>
+          </ul>
+          <!-- 4 -->
+          <nav class="page-header__menu-main-nav">
+            <ul class="site-list main-nav__list">
+              <li class="site-list__item">
+                <a href="#" class="site-list__reference">О сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html" class="site-list__reference">Направления</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html" class="site-list__reference">Попутчики</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- 5 -->
+          <ul class="contacts registration__contacts">
+            <li class="contacts__item registration__contact">
+              <a class="contacts__contact contacts__contact--blue">
+                <div class="contacts__image">
+                  <svg width="18" height="18">
+                    <use xlink:href="#contacts-phone"></use>
+                  </svg>
+                </div>
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="contacts__item registration__contact">
+              <a class="contacts__contact contacts__contact--blue">
+                <div class="contacts__image">
+                  <svg width="18" height="18">
+                    <use xlink:href="#contacts-mail"></use>
+                  </svg>
+                </div>
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+          <!-- 6 -->
+          <ul class="social page-header__social">
+            <li class="social__item social__item--transparent">
+              <a href="#" class="social__link social__link--header">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="socal__icon--facebook social__icon" width="11" height="21">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--transparent">
+              <a href="#" class="social__link social__link--header">
+                <span class="visually-hidden">Vkontakte</span>
+                <svg class="social__icon social__icon--vk" width="23" height="12">
+                  <use xlink:href="#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--transparent">
+              <a href="#" class="social__link social__link--header">
+                <span class="visually-hidden">Instagram</span>
+                <svg class="social__icon social__icon--instagram" width="18" height="18">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -468,6 +536,8 @@
         </a>
       </div>
     </footer>
+    <script src="js/scroll.js"></script>
+    <script src="js/menu_open.js"></script>
   </body>
 
 </html>

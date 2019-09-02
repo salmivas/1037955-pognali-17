@@ -6,6 +6,12 @@
   text-transform: uppercase;
 
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .site-list__reference {
@@ -27,4 +33,9 @@
       color: @light-gold-30;
     }
   }
+}
+
+.site-list__item {
+  display: flex;
+  align-items: center;
 }
