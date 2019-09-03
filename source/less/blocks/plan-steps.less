@@ -5,7 +5,7 @@
 .plan-steps__step {
   margin-bottom: 10px;
   padding-top: 22px;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
   padding-left: 19px;
   padding-right: 20px;
 
@@ -13,7 +13,7 @@
   border-radius: 10px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     padding-top: 45px;
     padding-bottom: 55px;
     padding-left: 43px;
@@ -25,12 +25,36 @@
   @media (min-width: @desktop-width) {
     position: relative;
 
+    margin-bottom: 44px;
     padding-top: 96px;
     padding-bottom: 105px;
     padding-left: 160px;
     padding-right: 160px;
 
     border-radius: 60px;
+  }
+
+  &--second-step {
+    padding-bottom: 17px;
+    .plan-steps__step-description {
+      margin-bottom: 22px;
+
+      @media (min-width: @tablet-width) {
+        margin-bottom: 35px;
+      }
+
+      @media (min-width: @desktop-width) {
+        margin-bottom: 56px;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 53px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 105px;
+    }
   }
 }
 

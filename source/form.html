@@ -284,7 +284,7 @@
               </ul>
             </h2>
             <ul class="plan-steps add-plan__plan-steps">
-              <li class="first-step plan-steps__step plan-steps__step--first-step">
+              <li class="first-step plan-steps__step plan-steps__step--first-step" id="first-step-id">
                 <h3 class="plan-steps__step-headline">
                   <p class="plan-steps__headline-number">Шаг 1.</p>
                   <p class="plan-steps__headline-description">Даты пребывания</p>
@@ -369,9 +369,68 @@
                       <img src="img/month-arrow-right.svg" alt="Переключить вперёд" width="9" height="17">
                     </button>
                   </div>
+                  <div class="calendar first-step__calendar">
+                    <div class="calendar__week-days">
+                      <p class="calendar__week-day-name">П<span class="calendar__second-letter">н</span></p>
+                      <p class="calendar__week-day-name">В<span class="calendar__second-letter">т</span></p>
+                      <p class="calendar__week-day-name">С<span class="calendar__second-letter">р</span></p>
+                      <p class="calendar__week-day-name">Ч<span class="calendar__second-letter">т</span></p>
+                      <p class="calendar__week-day-name">П<span class="calendar__second-letter">т</span></p>
+                      <p class="calendar__week-day-name calendar__week-day-name--holiday">С<span class="calendar__second-letter">б</span></p>
+                      <p class="calendar__week-day-name calendar__week-day-name--holiday">В<span class="calendar__second-letter">с</span></p>
+                    </div>
+                    <div class="calendar__table-wrapper">
+                      <div class="calendar__table-cell calendar__table-cell--disabled">23</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">24</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">25</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">26</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">27</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">28</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">1<span class="calendar__cell-month">мар</span></div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">2</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">3</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">4</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">5</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">6</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">7</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">8</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">9</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">10</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">11</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">12</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">13</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">14</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">15</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">16</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">17</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">18</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">19</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">20</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">21</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">22</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">23</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">24</div>
+                      <div class="calendar__table-cell calendar__table-cell--disabled">25</div>
+                      <div class="calendar__table-cell calendar__table-cell--checked">26<span class="calendar__cell-check calendar__cell-check--in">Заезд</span></div>
+                      <div class="calendar__table-cell calendar__table-cell--checked">27</div>
+                      <div class="calendar__table-cell calendar__table-cell--checked">28<span class="calendar__cell-check calendar__cell-check--out">Выезд</span></div>
+                      <div class="calendar__table-cell">29</div>
+                      <div class="calendar__table-cell">30</div>
+                      <div class="calendar__table-cell">31</div>
+                      <div class="calendar__table-cell">1<span class="calendar__cell-month">апр</span></div>
+                      <div class="calendar__table-cell">2</div>
+                      <div class="calendar__table-cell">3</div>
+                      <div class="calendar__table-cell">4</div>
+                      <div class="calendar__table-cell">5</div>
+                    </div>
+                  </div>
                 </div>
+                <a class="button form-main__button" href="#second-step-id">
+                  <span>Следующий шаг</span>
+                  <img src="img/triangle-arrow-right.svg" width="10" height="14">
+                </a>
               </li>
-              <li class="second-step plan-steps__step plan-steps__step--second-step">
+              <li class="second-step plan-steps__step plan-steps__step--second-step" id="second-step-id">
                 <h3 class="plan-steps__step-headline">
                   <p class="plan-steps__headline-number">Шаг 2.</p>
                   <p class="plan-steps__headline-description">Маршрут</p>
@@ -390,9 +449,70 @@
                     <p class="plan-steps__marker-name">Развлечения</p>
                   </li>
                 </ul>
-                <p class="plan-steps__step-description"><span class="plan-steps__tricky-wrapper">Укажите страны, которые вы хотели по посетить.</span> Это может быть одна или сразу несколько.</p>
+                <p class="plan-steps__step-description "><span class="plan-steps__tricky-wrapper">Укажите страны, которые вы хотели по посетить.</span> Это может быть одна или сразу несколько.</p>
+                <ul class="second-step__countries-list">
+                  <li class="second-step__country-item">
+                    <div class="second-step__country-name-wrapper">
+                      <span class="second-step__country-name">Босния и герцеговина</span>
+                      <button type="button" class="second-step__dpopdown-button" aria-label="Выбрать страну">
+                        <img class="second-step__dropdown-image" src="img/dropdown-form.svg" alt="Dropdown" width="12" height="7">
+                      </button>
+                    </div>
+                    <div class="second-step__country-flag">
+                      <img src="img/flag-bosnia.svg" alt="" width="35" height="24">
+                    </div>
+                    <button type="button" class="second-step__del-button" aria-label="Удалить страну">
+                      <img class="second-step__del-image" src="img/filter-close.svg" alt="Dropdown" width="9" height="9">
+                    </button>
+                  </li>
+                  <li class="second-step__country-item">
+                    <div class="second-step__country-name-wrapper">
+                      <span class="second-step__country-name">Чехословакия</span>
+                      <button type="button" class="second-step__dpopdown-button" aria-label="Выбрать страну">
+                        <img class="second-step__dropdown-image" src="img/dropdown-form.svg" alt="Dropdown" width="12" height="7">
+                      </button>
+                    </div>
+                    <div class="second-step__country-flag">
+                      <img src="img/flag-czech.svg" alt="" width="35" height="24">
+                    </div>
+                    <button type="button" class="second-step__del-button" aria-label="Удалить страну">
+                      <img class="second-step__del-image" src="img/filter-close.svg" alt="Dropdown" width="9" height="9">
+                    </button>
+                  </li>
+                  <li class="second-step__country-item second-step__country-item--unchoosen">
+                    <div class="second-step__country-name-wrapper">
+                      <span class="second-step__country-name">Выберите страну</span>
+                      <button type="button" class="second-step__dpopdown-button" aria-label="Выбрать страну">
+                        <img class="second-step__dropdown-image" src="img/dropdown-form.svg" alt="Dropdown" width="12" height="7">
+                      </button>
+                    </div>
+                    <div class="second-step__country-flag"></div>
+                    <button type="button" class="second-step__del-button" aria-label="Удалить страну">
+                      <img class="second-step__del-image" src="img/filter-close.svg" alt="Dropdown" width="9" height="9">
+                    </button>
+                  </li>
+                  <li class="second-step__country-item second-step__country-item--button">
+                    <button class="second-step__add-button" type="button">
+                      Добавить страну
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img/qty-plus.svg">
+                        <img class="second-step__plus" src="img/qty-plus-mobile.svg" alt="Добавить" width="14" height="14">
+                      </picture>
+                    </button>
+                  </li>
+                </ul>
+                <div class="form-main__button-wrapper">
+                  <a class="button form-main__button form-main__button--pattern" href="#third-step-id">
+                    <span>Следующий шаг</span>
+                    <img src="img/triangle-arrow-right.svg" width="10" height="14">
+                  </a>
+                  <a class="button form-main__button form-main__button--backward" href="#first-step-id">
+                    <img src="img/triangle-arrow-left.svg" width="10" height="14">
+                    <span>На шаг назад</span>
+                  </a>
+                </div>
               </li>
-              <li class="third-step plan-steps__step plan-steps__step--third-step">
+              <li class="third-step plan-steps__step plan-steps__step--third-step" id="third-step-id">
                 <h3 class="plan-steps__step-headline">
                   <p class="plan-steps__headline-number">Шаг 3.</p>
                   <p class="plan-steps__headline-description">Развлечения</p>

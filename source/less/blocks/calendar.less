@@ -1,0 +1,178 @@
+.calendar__week-days {
+  display: flex;
+
+  width: 100%;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.calendar__week-day-name {
+  flex-grow: 1;
+
+  width: 100% / 7;
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: @greyish-brown;
+
+  &--holiday {
+    color: @orange-red;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 15px;
+    text-align: left;
+  }
+}
+
+.calendar__second-letter {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+}
+
+.calendar__table-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar__table-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  width: 100% / 7;
+  height: 31px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: @greyish-brown;
+
+  border: 1px solid @cloudy-blue;
+  background-color: @pale-grey-middle;
+
+  &:nth-child(1n) {
+    border-top: none;
+    border-left: none;
+  }
+
+  &:nth-child(-n+7) {
+    border-top: 1px solid @cloudy-blue;
+  }
+
+  &:nth-child(7n+1) {
+    border-left: 1px solid @cloudy-blue;
+  }
+
+  &--disabled {
+    color: @greyish-brown-30;
+    background-color: @white;
+  }
+
+  &--checked {
+    flex-wrap: wrap;
+
+    color: @white;
+    background-color: @dark-slate-blue;
+  }
+
+  &--choosen {
+    color: @white;
+    background-color: @dark-blue-grey-four;
+  }
+
+  &:hover {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 105%;
+      height: 105%;
+
+      border: 2px solid @orange-red;
+      border-radius: 2px;
+      z-index: 1;
+
+      @media (min-width: @tablet-width) {
+        border-width: 4px;
+        border-radius: 4px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: -2px;
+        left: -4px;
+      }
+    }
+  }
+
+  &:active {
+    color: @white;
+    background-color: @dark-blue-grey-four;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 69px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: 71.1px;
+    padding-top: 12px;
+    padding-left: 15px;
+
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 1.8px;
+  }
+}
+
+.calendar__cell-month {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: 7px;
+  }
+}
+
+.calendar__cell-check {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

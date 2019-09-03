@@ -16,3 +16,73 @@
 
   .bottom-liner(-1);
 }
+
+.form-main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  text-transform: uppercase;
+
+  border-radius: 20px;
+
+  img {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-evenly;
+
+    width: 285px;
+    padding-top: 28px;
+    padding-bottom: 29px;
+
+    text-transform: initial;
+
+    img {
+      display: block;
+    }
+  }
+
+  &--backward {
+    padding: 0;
+
+    border-radius: initial;
+    background-color: initial;
+
+    &:hover {
+      background-color: initial;
+      opacity: 0.7;
+    }
+
+    &:active {
+      background-color: initial;
+    }
+
+    @media (min-width: @tablet-width) {
+      justify-content: space-between;
+      width: 179px;
+    }
+  }
+
+  &--pattern {
+    margin-bottom: 17px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form-main__button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
+}
