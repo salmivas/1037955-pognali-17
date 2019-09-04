@@ -1,5 +1,56 @@
 .catalog-main {
   background-color: @pale-grey;
+
+  &--opened {
+    .countries-filter__land-list {
+      display: flex;
+    }
+
+    .countries-filter__button-range--showall {
+      display: none;
+    }
+
+    .countries-filter__button-range--collapse {
+      display: flex;
+    }
+
+    .countries-filter__spreadsheet-wrapper {
+      display: block;
+
+      @media (min-width: @tablet-width) {
+        display: flex;
+      }
+    }
+
+    .countries-filter__button-footer {
+      display: block;
+    }
+  }
+
+  &--closed {
+
+    @media(max-width: @tablet-width - 1) {
+      .countries-filter__land-list {
+        display: none;
+      }
+    }
+
+    .countries-filter__button-range--collapse {
+      display: none;
+    }
+
+    .countries-filter__button-range--showall {
+      display: block;
+    }
+
+    .countries-filter__spreadsheet-wrapper {
+      display: none;
+    }
+
+    .countries-filter__button-footer {
+      display: none;
+    }
+  }
 }
 
 .catalog-main__travellers-container {
