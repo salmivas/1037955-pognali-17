@@ -36,7 +36,7 @@
   border-radius: 50%;
 
   &:hover {
-    box-shadow: 0px 2px 10px 0 hsla(0, 0%, 0%, 0.08);
+    box-shadow: 0 2px 10px 0 hsla(0, 0%, 0%, 0.08);
 
     .transportation-list__tooltype {
       display: block;
@@ -75,24 +75,24 @@
 }
 
 .transport-options__transport-checkbox {
-  &:hover~label svg {
+  &:hover ~ label svg {
     fill: @dark-slate-blue-two;
   }
 
-  &:active~label svg {
+  &:active ~ label svg {
     fill: @dark-slate-blue-two;
     opacity: 0.3;
   }
 
-  &:checked~label svg {
+  &:checked ~ label svg {
     opacity: 0.15;
   }
 
-  &:checked:hover~label svg {
+  &:checked:hover ~ label svg {
     opacity: 0.3;
   }
 
-  &:checked:active~label svg {
+  &:checked:active ~ label svg {
     opacity: 0.1;
   }
 }

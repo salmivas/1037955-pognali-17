@@ -52,7 +52,6 @@
   }
 
   @media (min-width: @tablet-width) {
-
     &--search-travellers {
       margin-bottom: 25px;
       padding-top: 22px;
@@ -233,7 +232,7 @@
   left: 14px;
 
   &:active {
-    &~.first-step__text-input {
+    & ~ .first-step__text-input {
       border-color: @dark-blue-grey-nnm;
     }
   }
@@ -255,7 +254,7 @@
   right: 14px;
 
   &:active {
-    &~.first-step__text-input {
+    & ~ .first-step__text-input {
       border-color: @dark-blue-grey-nnm;
     }
   }
@@ -303,7 +302,7 @@
 
 .first-step__children-checkbox {
   &:hover {
-    &+label {
+    & + label {
       .first-step__checkbox-form {
         border-color: @dark-blue-grey-five;
       }
@@ -311,7 +310,7 @@
   }
 
   &:checked {
-    &+label {
+    & + label {
       .first-step__checkbox-tick {
         display: block;
       }
@@ -319,7 +318,7 @@
   }
 
   &:active {
-    &+label {
+    & + label {
       .first-step__checkbox-form {
         background-color: @pale-grey-two;
         border-color: $background-color;

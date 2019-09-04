@@ -46,7 +46,6 @@
 
   &:first-of-type {
     @media (max-width: @tablet-width - 1) {
-
       &::before {
         content: "";
 
@@ -195,7 +194,6 @@
       font-weight: 400;
       line-height: 20px;
       text-align: left;
-
     }
 
     @media (min-width: @desktop-width) {
@@ -255,7 +253,7 @@
   &:invalid {
     border-color: @red-two;
 
-    &+span {
+    & + span {
       display: block;
     }
   }
