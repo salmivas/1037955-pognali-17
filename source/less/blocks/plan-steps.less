@@ -36,6 +36,7 @@
 
   &--second-step {
     padding-bottom: 17px;
+
     .plan-steps__step-description {
       margin-bottom: 22px;
 
@@ -54,6 +55,22 @@
 
     @media (min-width: @desktop-width) {
       padding-bottom: 105px;
+    }
+  }
+
+  &--third-step {
+    margin-bottom: 0;
+
+    .plan-steps__step-description {
+      margin-bottom: 21px;
+
+      @media (min-width: @tablet-width) {
+        margin-bottom: 66px;
+      }
+
+      @media (min-width: @desktop-width) {
+        margin-bottom: 56px;
+      }
     }
   }
 }
