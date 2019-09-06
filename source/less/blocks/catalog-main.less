@@ -1,7 +1,7 @@
 .catalog-main {
   background-color: @pale-grey;
 
-   &--closed {
+  &--closed {
     @media (max-width: @tablet-width - 1) {
       .countries-filter__land-list {
         display: none;
@@ -90,7 +90,8 @@
 
 .catalog-main__travellers-filter {
   width: 100%;
-  margin: 25px 0 25px 0;
+  margin-top: 25px;
+  margin-bottom: 28px;
 
   background-color: @light-gold;
   border-radius: 20px;
@@ -111,8 +112,15 @@
 .catalog-main__catalog-travellers {
   width: 100%;
 
+  padding-bottom: 84px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 110px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 950px;
+    padding-bottom: 125px;
   }
 }
 
@@ -124,8 +132,6 @@
   width: 100%;
 
   .no-list();
-  margin-top: 100px; //TODO: Убрать. Временно для разметки
-  margin-bottom: 100px; //TODO: Убрать. Временно для разметки
 
   background-color: @white;
   border-radius: 20px;
@@ -178,7 +184,8 @@
 
   width: 100%;
   height: 100%;
-  padding: 18px 0;
+  padding-top: 16px;
+  padding-bottom: 14px;
 
   &:hover {
     & * {
@@ -191,6 +198,19 @@
       opacity: 0.3;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.catalog-main__arrow-picture {
+  width: 10px;
+  height: 20px;
 }
 
 .catalog-main__sheet-number {
@@ -234,6 +254,8 @@
   align-items: center;
   justify-content: center;
 
+  margin-bottom: 21px;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -242,9 +264,6 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-  }
 
   &:hover {
     opacity: 0.6;
@@ -252,6 +271,20 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+
+    font-size: 20px;
+
+    transform: translateX(-5px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
+
+    transform: translateX(-38px);
   }
 }
 

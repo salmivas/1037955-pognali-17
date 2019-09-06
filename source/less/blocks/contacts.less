@@ -1,6 +1,25 @@
 .contacts {
   padding: 0;
   list-style: none;
+
+  &--registration {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+
+    margin: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+      align-self: center;
+      justify-content: space-between;
+
+      width: 867px;
+    }
+  }
 }
 
 .contacts__contact {
@@ -84,5 +103,17 @@
       width: 27px;
       height: 27px;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+.contacts__item {
+  &--registration {
+    display: flex;
+    align-items: center;
   }
 }

@@ -38,7 +38,7 @@
   &:hover {
     box-shadow: 0 2px 10px 0 hsla(0, 0%, 0%, 0.08);
 
-    .transportation-list__tooltype {
+    .transport-options__tooltype {
       display: block;
     }
   }
@@ -94,5 +94,47 @@
 
   &:checked:active ~ label svg {
     opacity: 0.1;
+  }
+}
+
+.transport-options__tooltype {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0;
+  margin-top: 15px;
+  padding: 0 23px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  font-size: 20px;
+  line-height: 20px;
+
+  background-color: @dark-blue-grey-four;
+  border-radius: 4px;
+
+  z-index: 1;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+
+    width: 11px;
+    height: 11px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: inherit;
+    transform: rotate(45deg);
+
+    z-index: 1;
   }
 }
