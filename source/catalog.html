@@ -19,7 +19,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp 2x">
-              <source type="image/webp" src="img/logo-mobile-white@1x.webp" srcset="img/logo-mobile-white@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
               <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?" class="page-header__logo-image page-header__logo-image--white" width="100" height="19">
@@ -27,7 +27,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
-              <source type="image/webp" src="img/logo-mobile-blue@1x.webp" srcset="img/logo-mobile-blue@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
               <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" class="page-header__logo-image page-header__logo-image--blue" width="100" height="19">
@@ -80,7 +80,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
-              <source type="image/webp" src="img/logo-mobile-blue@1x.webp" srcset="img/logo-mobile-blue@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
               <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" class="page-header__logo-image page-header__logo-image--blue" width="100" height="19">
@@ -194,14 +194,14 @@
               </li>
             </ul>
             <button class="countries-filter__button-header countries-filter__button-header--collapsed" type="button">
-              <div class="countries-filter__button-range countries-filter__button-range--showall">
+              <span class="countries-filter__button-range countries-filter__button-range--showall">
                 <span>Показать все</span>
                 <img src="img/dots.svg" alt="Свернуть" width="17" height="3">
-              </div>
-              <div class="countries-filter__button-range countries-filter__button-range--collapse">
+              </span>
+              <span class="countries-filter__button-range countries-filter__button-range--collapse">
                 <span>Свернуть</span>
                 <img src="img/close.svg" alt="Свернуть" width="12" height="12">
-              </div>
+              </span>
             </button>
           </div>
           <div class="countries-filter__spreadsheet-wrapper">
@@ -328,7 +328,7 @@
               </li>
             </ul>
             <ul class="countries-filter__countries">
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--1" aria-label="А">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--1">
                 <p class="countries-filter__letter-name">А</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--1">
                   <li class="countries-filter__letter-item"><a class="countries-filter__link" href="ilands/australia.html">Австралия</a></li>
@@ -344,7 +344,7 @@
                   <li class="countries-filter__letter-item"><a class="countries-filter__link" href="europe/afganistan.html">Афганистан</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--2" aria-label="Б">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--2">
                 <p class="countries-filter__letter-name">Б</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--2">
                   <li class="countries-filter__letter-item"><a href="ilands/bahamas.html" class="countries-filter__link">Багамские Острова</a></li>
@@ -366,7 +366,7 @@
                   <li class="countries-filter__letter-item"><a href="asia/butan.html" class="countries-filter__link">Бутан</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--3" aria-label="В">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--3">
                 <p class="countries-filter__letter-name">В</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--3">
                   <li class="countries-filter__letter-item"><a href="ilands/vanutau.html" class="countries-filter__link">Вануату</a></li>
@@ -377,7 +377,7 @@
                   <li class="countries-filter__letter-item"><a href="asia/vietnam.html" class="countries-filter__link">Вьетнам</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--4" aria-label="Г">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--4">
                 <p class="countries-filter__letter-name">Г</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--4">
                   <li class="countries-filter__letter-item"><a href="ilands/gabon.html" class="countries-filter__link">Габон</a></li>
@@ -395,7 +395,7 @@
                   <li class="countries-filter__letter-item"><a href="europe/georgia.html" class="countries-filter__link">Грузия</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--5" aria-label="Д">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--5">
                 <p class="countries-filter__letter-name">Д</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--5">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Дания</a></li>
@@ -404,30 +404,30 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Доминикана</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--6" aria-label="E">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--6">
                 <p class="countries-filter__letter-name">Е</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--6">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Египет</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--7" aria-label="Ё">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--7">
                 <p class="countries-filter__letter-name">Ё</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--7">
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--8" aria-label="Ж">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--8">
                 <p class="countries-filter__letter-name">Ж</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--8">
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--9" aria-label="З">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--9">
                 <p class="countries-filter__letter-name">З</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--9">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Замбия</a></li>
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Зимбабве</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--10" aria-label="И">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--10">
                 <p class="countries-filter__letter-name">И</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--10">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Израиль</a></li>
@@ -442,12 +442,12 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Италия</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--11" aria-label="Й">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--11">
                 <p class="countries-filter__letter-name">Й</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--11">
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--12" aria-label="К">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--12">
                 <p class="countries-filter__letter-name">К</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--12">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Кабо-Верде</a></li>
@@ -472,7 +472,7 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Кувейт</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--13" aria-label="Л">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--13">
                 <p class="countries-filter__letter-name">Л</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--13">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Лаос</a></li>
@@ -486,7 +486,7 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Люксембург</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--14" aria-label="М">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--14">
                 <p class="countries-filter__letter-name">М</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--14">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Маврикий</a></li>
@@ -507,7 +507,7 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Мьянма</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--15" aria-label="Н">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--15">
                 <p class="countries-filter__letter-name">Н</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--15">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Намибия</a></li>
@@ -521,14 +521,14 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Норвегия</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--16" aria-label="О">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--16">
                 <p class="countries-filter__letter-name">О</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--16">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">ОАЭ</a></li>
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Оман</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--17" aria-label="П">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--17">
                 <p class="countries-filter__letter-name">П</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--17">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Пакистан</a></li>
@@ -541,12 +541,12 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Португалия</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--18" aria-label="Р">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--18">
                 <p class="countries-filter__letter-name">Р</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--18">
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--19" aria-label="С">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--19">
                 <p class="countries-filter__letter-name">С</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--19">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Сальвадор</a></li>
@@ -570,7 +570,7 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Сьерра-Леоне</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--20" aria-label="Т">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--20">
                 <p class="countries-filter__letter-name">Т</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--20">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Таджикистан</a></li>
@@ -585,7 +585,7 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Турция</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--21" aria-label="У">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--21">
                 <p class="countries-filter__letter-name">У</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--21">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Уганда</a></li>
@@ -594,7 +594,7 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Уругвай</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--22" aria-label="Ф">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--22">
                 <p class="countries-filter__letter-name">Ф</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--22">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Фиджи</a></li>
@@ -603,18 +603,18 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Франция</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--23" aria-label="Х">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--23">
                 <p class="countries-filter__letter-name">Х</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--23">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Хорватия</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--24" aria-label="Ц">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--24">
                 <p class="countries-filter__letter-name">Ц</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--24">
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--25" aria-label="Ч">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--25">
                 <p class="countries-filter__letter-name">Ч</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--25">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Чад</a></li>
@@ -623,7 +623,7 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Чили</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--26" aria-label="Ш">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--26">
                 <p class="countries-filter__letter-name">Ш</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--26">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Швейцария</a></li>
@@ -631,12 +631,12 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Шри-Ланка</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--27" aria-label="Щ">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--27">
                 <p class="countries-filter__letter-name">Щ</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--27">
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--28" aria-label="Э">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--28">
                 <p class="countries-filter__letter-name">Э</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--28">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Эквадор</a></li>
@@ -646,14 +646,14 @@
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Эфиопия</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--29" aria-label="Ю">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--29">
                 <p class="countries-filter__letter-name">Ю</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--29">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">ЮАР</a></li>
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Южный Судан</a></li>
                 </ul>
               </li>
-              <li class="countries-filter__countries-letter countries-filter__countries-letter--30" aria-label="Я">
+              <li class="countries-filter__countries-letter countries-filter__countries-letter--30">
                 <p class="countries-filter__letter-name">Я</p>
                 <ul class="countries-filter__letter-list countries-filter__letter-list--30">
                   <li class="countries-filter__letter-item"><a href="#" class="countries-filter__link">Ямайка</a></li>
@@ -844,7 +844,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 760px)" srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp 2x">
-                  <source type="image/webp" src="img/firsova-mobile@1x.webp" srcset="img/firsova-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@2x.jpg 2x">
                   <source media="(min-width: 760px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg 2x">
                   <img class="catalog-card__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова" width="70" height="70">
@@ -919,7 +919,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 760px)" srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp 2x">
-                  <source type="image/webp" src="img/demin-mobile@1x.webp" srcset="img/demin-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
                   <source media="(min-width: 760px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
                   <img class="catalog-card__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Петя Демин" width="70" height="70">
@@ -990,7 +990,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 760px)" srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp 2x">
-                  <source type="image/webp" src="img/smolov-mobile@1x.webp" srcset="img/smolov-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@2x.jpg 2x">
                   <source media="(min-width: 760px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg 2x">
                   <img class="catalog-card__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Марк Смолов" width="70" height="70">
@@ -1065,7 +1065,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 760px)" srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp 2x">
-                  <source type="image/webp" src="img/rogovaya-mobile@1x.webp" srcset="img/rogovaya-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@2x.jpg 2x">
                   <source media="(min-width: 760px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg 2x">
                   <img class="catalog-card__image" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая" width="70" height="70">
@@ -1177,7 +1177,7 @@
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
-            <source type="image/webp" src="img/logo-mobile-blue@1x.webp" srcset="img/logo-mobile-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
             <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" class="page-footer__logo-image" width="100" height="19">
