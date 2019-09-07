@@ -1,5 +1,17 @@
 .map {
-  background-color: @aqua-marine;
+  border-color: @aqua-marine;
+  background-image: url("../img/map-image-mobile@1x.png");
+
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-image-tablet@1x.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/map-image-desktop@1x.png");
+  }
 }
 
 .map__container {
